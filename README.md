@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  Códigos de memórias em microeletrônica
+  Memórias em microeletrônica
 </h1>
 
 Códigos de desenvolvimento de  circuito de microeletrônica utilizando os softwares da Cadence como: Spectre, Virtuoso etc. 
