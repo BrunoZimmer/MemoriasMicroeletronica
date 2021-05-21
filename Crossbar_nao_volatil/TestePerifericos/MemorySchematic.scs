@@ -1,0 +1,49 @@
+* Crossbar one bit
+
+simulator lang=spice
+
+.include '45nm_LP.pm'
+.include 'MTJT.spi'
+
+
+*pra escrever precisa de uma ddp de 0.9 e pra ler -0.36
+.param cap = 0.1f
+
+.param Vb = 1.2
+.param Vnb = 0
+.param Vhb = 0.6
+
+.param Vgnd = 0
+.param Vvdd = 1.2
+
+.param Vread = 1
+
+.param Tpwl = 0.7n
+.param Tpbl = 0.7n
+.param Tppre = 0.7n
+
+Vwl WL Gnd PWL 0 'Vhb' '(Tpwl-1p)' 'Vhb' 'Tpwl' 'Vb' '(Tpwl+0.3n-1p)' 'Vb' '(Tpwl+0.3n)' 'Vhb' '(1n+Tpwl)' 'Vhb' '(1n+Tpwl+1p)' 'Vread' '(1n+Tpwl+0.3n-1p)' 'Vread' '(1n+Tpwl+0.3n)' 'Vhb' '(2n+Tpwl-1p)' 'Vhb' '(2n+Tpwl)' 'Vnb' '(2n+Tpwl+0.3n-1p)' 'Vnb' '(2n+Tpwl+0.3n)' 'Vhb' '(3n+Tpwl)' 'Vhb' '(3n+Tpwl+1p)' 'Vread' '(3n+Tpwl+0.3n-1p)' 'Vread' '(3n+Tpwl+0.3n)' 'Vhb'
+
+Vbl BL Gnd PWL 0 'Vhb' '(Tpbl-1p)' 'Vhb' 'Tpbl' 'Vnb' '(Tpbl+0.3n-1p)' 'Vnb' '(Tpbl+0.3n)' 'Vhb' '(2n+Tpbl-1p)' 'Vhb' '(2n+Tpbl)' 'Vb' '(2n+Tpbl+0.3n-1p)' 'Vb' '(2n+Tpbl+0.3n)' 'Vhb'
+
+* Read Operation
+Vvrd Vvrd Gnd 'Vvdd'
+Vpre PRE Gnd PWL 0 'Vvdd' '(1n+Tppre-0.3n-1p)' 'Vvdd' '(1n+Tppre-0.3n)' 'Vgnd' '(1n+Tppre-2p)' 'Vgnd' '(1n+Tppre-1p)' 'Vvdd'  '(3n+Tppre-0.3n-1p)' 'Vvdd' '(3n+Tppre-0.3n)' 'Vgnd' '(3n+Tppre-2p)' 'Vgnd' '(3n+Tppre-1p)' 'Vvdd' 
+
+* Write Operation
+Vdd Vdd Gnd 'Vvdd' 
+
+* Bitcell
+X1 WL BL MTJT
+
+*Pre Charge
+*Transistor Drain Gate Source Bulk
+M_i_1 BL PRE Vvrd Vdd PMOS W=0.630000U L=0.050000U
+
+*Bitlines Capacitance
+Cbl BL Gnd 'cap'
+
+
+.TRAN 1p 10n
+
+.option rawfmt="psfbin"

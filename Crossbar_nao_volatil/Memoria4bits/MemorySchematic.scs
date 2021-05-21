@@ -1,0 +1,64 @@
+* Crossbar one bit
+
+simulator lang=spice
+
+.include '45nm_LP.pm'
+.include 'MTJT.spi'
+
+
+*pra escrever precisa de uma ddp de 0.9 e pra ler -0.36
+.param cap = 0.2f
+
+.param Vvdd = 1.4
+.param Vb = 1.4
+
+.param Vhb = 0.7
+
+.param Vnb = 0
+.param Vgnd = 0
+
+.param Vread = 1.1
+*.param Vreadb = -0.5
+
+.param Tpwl = 0.9n
+.param Tpbl = 0.9n
+.param Tppre = 0.9n
+
+* Wordlines controller
+Vwl1 WL1 Gnd PWL 0 'Vhb' '(Tpwl-1p)' 'Vhb' 'Tpwl' 'Vb' '(Tpwl+0.3n-1p)' 'Vb' '(Tpwl+0.3n)' 'Vhb' '(1n+Tpwl)' 'Vhb' '(1n+Tpwl+1p)' 'Vread' '(1n+Tpwl+0.3n-1p)' 'Vread' '(1n+Tpwl+0.3n)' 'Vhb' '(4n+Tpwl-1p)' 'Vhb' '(4n+Tpwl)' 'Vnb' '(4n+Tpwl+0.3n-1p)' 'Vnb' '(4n+Tpwl+0.3n)' 'Vhb' '(5n+Tpwl)' 'Vhb' '(5n+Tpwl+1p)' 'Vread' '(5n+Tpwl+0.3n-1p)' 'Vread' '(5n+Tpwl+0.3n)' 'Vhb' '(6n+Tpbl-1p)' 'Vhb' '(6n+Tpbl)' 'Vnb' '(6n+Tpbl+0.3n-1p)' 'Vnb' '(6n+Tpbl+0.3n)' 'Vhb'
+Vwl2 WL2 Gnd PWL 0 'Vhb' '(2n+Tpwl-0p)' 'Vhb' '(2n+Tpwl+1p)' 'Vb' '(2n+Tpwl+0.3n-1p)' 'Vb' '(2n+Tpwl+0.3n)' 'Vhb' '(3n+Tpwl)' 'Vhb' '(3n+Tpwl+1p)' 'Vread' '(3n+Tpwl+0.3n-5p)' 'Vread' '(3n+Tpwl+0.3n)' 'Vhb' '(6n+Tpwl-1p)' 'Vhb' '(6n+Tpwl)' 'Vnb' '(6n+Tpwl+0.3n-1p)' 'Vnb' '(6n+Tpwl+0.3n)' 'Vhb' '(7n+Tpwl)' 'Vhb' '(7n+Tpwl+1p)' 'Vread' '(7n+Tpwl+0.3n-1p)' 'Vread' '(7n+Tpwl+0.3n)' 'Vhb'
+
+
+*Bitlines controller
+Vbl1 BL1 Gnd PWL 0 'Vhb' '(Tpbl-1p)' 'Vhb' 'Tpbl' 'Vnb' '(Tpbl+0.3n-1p)' 'Vnb' '(Tpbl+0.3n)' 'Vhb' '(6n+Tpbl-1p)' 'Vhb' '(6n+Tpbl)' 'Vb' '(6n+Tpbl+0.3n-1p)' 'Vb' '(6n+Tpbl+0.3n)' 'Vhb'
+Vbl2 BL2 Gnd PWL 0 'Vhb' '(2n+Tpbl-0p)' 'Vhb' '(2n+Tpbl+1p)' 'Vnb' '(2n+Tpbl+0.3n-1p)' 'Vnb' '(2n+Tpbl+0.3n)' 'Vhb' '(4n+Tpbl-1p)' 'Vhb' '(4n+Tpbl)' 'Vb' '(4n+Tpbl+0.3n-1p)' 'Vb' '(4n+Tpbl+0.3n)' 'Vhb'
+
+* Read Operation
+Vvrd Vvrd Gnd 'Vvdd'
+Vpre1 PRE1 Gnd 'Vvdd'
+Vpre2 PRE2 Gnd 'Vvdd'
+
+*Vpre1 PRE1 Gnd PWL 0 'Vvdd' '(1n+Tppre-0.3n-1p)' 'Vvdd' '(1n+Tppre-0.3n)' 'Vgnd' '(1n+Tppre-2p)' 'Vgnd' '(1n+Tppre-1p)' 'Vvdd'  '(3n+Tppre-0.3n-1p)' 'Vvdd' *'(3n+Tppre-0.3n)' 'Vgnd' '(3n+Tppre-2p)' 'Vgnd' '(3n+Tppre-1p)' 'Vvdd' 
+*Vpre2 PRE2 Gnd PWL 0 'Vvdd' '(1n+Tppre-0.3n-1p)' 'Vvdd' '(1n+Tppre-0.3n)' 'Vgnd' '(1n+Tppre-2p)' 'Vgnd' '(1n+Tppre-1p)' 'Vvdd'  '(3n+Tppre-0.3n-1p)' 'Vvdd' *'(3n+Tppre-0.3n)' 'Vgnd' '(3n+Tppre-2p)' 'Vgnd' '(3n+Tppre-1p)' 'Vvdd' 
+
+Vdd Vdd Gnd 'Vvdd' 
+
+* Bitcell
+X1 WL1 BL1 MTJT
+X2 WL1 BL2 MTJT
+X3 WL2 BL1 MTJT
+X4 WL2 BL2 MTJT
+
+*Pre Charge
+*Transistor Drain Gate Source Bulk
+M_i_1 BL1 PRE1 Vvrd Vdd PMOS W=0.630000U L=0.050000U
+M_i_2 BL2 PRE2 Vvrd Vdd PMOS W=0.630000U L=0.050000U
+
+*Bitlines Capacitance
+Cbl1 BL1 Gnd 'cap'
+Cbl2 BL2 Gnd 'cap'
+
+
+.TRAN 1p 10n
+
+.option rawfmt="psfbin"

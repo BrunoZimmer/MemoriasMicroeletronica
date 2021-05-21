@@ -1,0 +1,8 @@
+$ Simulator: spectre (ver. 16.1.0.673.isr14)
+.title '*Memoria de uma bitcell'
+index Vread Tpread Ten_dif Voltage Dif_tempo_min Power1 Power2 Power3 Power4 
+Power5 Power6 Power7 Power8 Power9 Power10 Power11 Power alter# 
+1 0.8 2.05605e-09 0.0937449 0.8 4.39462e-11 1.87647e-15 1.61277e-15 0 0 0 
+9.55819e-17 0 2.07545e-17 0 0 1.47593e-16 3.75316e-15 1 
+2 0.79 2.05254e-09 0.0944861 0.79 4.74618e-11 1.90101e-15 1.5975e-15 0 0 0 
+1.54056e-16 0 1.3101e-17 0 0 6.80273e-16 4.34595e-15 1 

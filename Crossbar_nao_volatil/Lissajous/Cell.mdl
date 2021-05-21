@@ -1,0 +1,9 @@
+*MDL code
+
+alias measurement LisCurve {
+	run tran(stop=2.5n)
+	export real Current = I(Vbl)
+	export real Voltage = V(Vbl)
+	export real Resistance = V(Vbl)/I(Vbl)
+}
+run LisCurve

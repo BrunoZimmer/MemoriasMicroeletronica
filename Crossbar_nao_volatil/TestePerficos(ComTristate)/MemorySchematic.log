@@ -1,0 +1,210 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 4953
+Memory  available: 5.0529 GB  physical: 33.7036 GB
+Linux   : CentOS Linux release 7.8.2003 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+        Socket: Processors [Frequency]
+        0:       0 [2502.7],  1 [2401.8],  2 [2455.6],  3 [2497.9]
+        
+System load averages (1min, 5min, 15min) : 12.5 %, 5.8 %, 4.0 %
+
+
+Simulating `MemorySchematic.scs' on itacolomi.lapsi at 1:54:36 PM, Wed Aug 12, 2020 (process id: 4953).
+Current working directory: /home/brunozimmer/Documentos/Crossbar_nao_volatil/Memoria1bit
+Command line:
+    /tools/cadence/SPECTRE161/tools/bin/spectre -64 MemorySchematic.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/brunozimmer/Documentos/Crossbar_nao_volatil/Memoria1bit/MemorySchematic.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/brunozimmer/Documentos/Crossbar_nao_volatil/Memoria1bit/45nm_LP.pm
+Reading file:  /home/brunozimmer/Documentos/Crossbar_nao_volatil/Memoria1bit/MTJT.spi
+Reading file:  /home/brunozimmer/Documentos/Crossbar_nao_volatil/Memoria1bit/TRISTATE.spi
+Time for NDB Parsing: CPU = 145.255 ms, elapsed = 168.652 ms.
+Time accumulated: CPU = 171.68 ms, elapsed = 168.661 ms.
+Peak resident memory used = 43.1 Mbytes.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Existing shared object for module bsource_299dda is up to date.
+Installed compiled interface for bsource_299dda.
+Existing shared object for module bsource_c88c6a is up to date.
+Installed compiled interface for bsource_c88c6a.
+Existing shared object for module bsource_42ea24 is up to date.
+Installed compiled interface for bsource_42ea24.
+Existing shared object for module bsource_7b7e87 is up to date.
+Installed compiled interface for bsource_7b7e87.
+Existing shared object for module bsource_098211 is up to date.
+Installed compiled interface for bsource_098211.
+Existing shared object for module bsource_ad0f4a is up to date.
+Installed compiled interface for bsource_ad0f4a.
+Time for Elaboration: CPU = 21.623 ms, elapsed = 21.1198 ms.
+Time accumulated: CPU = 193.437 ms, elapsed = 189.935 ms.
+Peak resident memory used = 51.3 Mbytes.
+
+
+Time for EDB Visiting: CPU = 1.156 ms, elapsed = 1.1611 ms.
+Time accumulated: CPU = 194.719 ms, elapsed = 191.234 ms.
+Peak resident memory used = 52.1 Mbytes.
+
+
+Global user options:
+             rawfmt = psfbin
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 24
+              bsim4 5     
+     bsource_7b7e87 1     
+     bsource_42ea24 1     
+     bsource_299dda 1     
+     bsource_098211 1     
+     bsource_ad0f4a 1     
+     bsource_c88c6a 1     
+          capacitor 7     
+           resistor 7     
+               vccs 1     
+               vcvs 4     
+            vsource 10    
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 2.197 ms, elapsed = 55.475 ms.
+Time accumulated: CPU = 197.02 ms, elapsed = 246.83 ms.
+Peak resident memory used = 53.5 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+*****************************************************
+Transient Analysis `timeSweep': time = (0 s -> 10 ns)
+*****************************************************
+
+Notice from spectre during IC analysis, during transient analysis `timeSweep'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = 17.788 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Warning from spectre during IC analysis, during transient analysis `timeSweep'.
+    WARNING (CMI-2682): M_i_1: The bulk-source junction forward bias voltage (907.132 mV) exceeds `VjsmFwd' = 843.248 mV.  The results are now incorrect because the junction current model has been linearized
+Notice from spectre during IC analysis, during transient analysis `timeSweep'.
+    X1.cDec2: Initial condition computed for node X1.n51 is in error by 9.92613 uV.
+        Decrease `rforce' to reduce error in computed initial conditions.  However, setting rforce too small may result in convergence difficulties or in the matrix becoming singular.
+
+DC simulation time: CPU = 1.945 ms, elapsed = 1.99986 ms.
+
+Notice from spectre during transient analysis `timeSweep'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/timeSweep.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 10 ns
+    step = 1 fs
+    maxstep = 200 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   9       (current)
+                 save   24      (voltage)
+
+
+Warning from spectre at time = 1 fs during transient analysis `timeSweep'.
+    WARNING (CMI-2682): M_i_1: The bulk-source junction forward bias voltage (907.132 mV) exceeds `VjsmFwd' = 843.248 mV.  The results are now incorrect because the junction current model has been linearized
+
+.........
+
+Notice from spectre at time = 791.641 ps during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node X2.M_i_3:dbnode.
+Notice from spectre at time = 795.87 ps during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node X2.M_i_3:dbnode.
+Notice from spectre at time = 804.329 ps during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node X2.M_i_3:dbnode.
+Notice from spectre at time = 893.149 ps during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node X2.M_i_3:dbnode.
+
+..........
+
+Notice from spectre at time = 960.822 ps during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node X2.M_i_3:dbnode.
+        Further occurrences of this notice will be suppressed.
+
+..........9..........8..........7..........6..........5..........4..........3..........2..........1..........0
+Number of accepted tran steps =             543
+
+Notice from spectre during transient analysis `timeSweep'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.nBiStable) = 10 V
+I: I(X1.eBiStable:p) = 19.78 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (50.0 %)      1 (36.4 %)      2 (12.5 %)      3 (6.1 %)
+        Other   
+Initial condition solution time: CPU = 2.013 ms, elapsed = 2.07806 ms.
+Intrinsic tran analysis time:    CPU = 99.901 ms, elapsed = 129.03 ms.
+Total time required for tran analysis `timeSweep': CPU = 103.567 ms, elapsed = 132.921 ms.
+Time accumulated: CPU = 305.266 ms, elapsed = 384.493 ms.
+Peak resident memory used = 55.6 Mbytes.
+
+
+Notice from spectre.
+    99 notices suppressed.
+
+
+Aggregate audit (1:54:37 PM, Wed Aug 12, 2020):
+Time used: CPU = 307 ms, elapsed = 414 ms, util. = 74.3%.
+Time spent in licensing: elapsed = 28.9 ms, percentage of total = 6.98%.
+Peak memory used = 56 Mbytes.
+Simulation started at: 1:54:36 PM, Wed Aug 12, 2020, ended at: 1:54:37 PM, Wed Aug 12, 2020, with elapsed time (wall clock): 414 ms.
+spectre completes with 0 errors, 2 warnings, and 10 notices.

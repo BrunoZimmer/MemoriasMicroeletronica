@@ -1,0 +1,12 @@
+*MDL code
+
+alias measurement PulsoRead{
+	run tran (stop = 3n)
+	real Ten1 = V(BL)@1.8n
+	real Ten2 = V(BLB)@1.8n
+	export real Ten_dif = abs(Ten1-Ten2)
+	export real Voltage = Vread
+}
+search Vread from binary(start=1, stop=0, tol=0.01){
+	run PulsoRead
+}until (PulsoRead->Ten_dif > 0.2)

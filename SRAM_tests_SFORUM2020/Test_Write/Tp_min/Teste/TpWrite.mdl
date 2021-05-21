@@ -1,0 +1,22 @@
+*MDL code
+
+alias measurement Teste{
+	run tran (stop = 5n)
+	export real Tp1 = 1.0n
+	export real Tp0 = 3.4n
+}
+
+alias measurement TpWrite{
+	run tran (stop = 5n)
+	export real Ten1 = V(QB)@Teste->Tp1
+	export real Ten0 = V(QB)@Teste->Tp0
+
+	export real Dif_tmin = (1n-Tp_wl)
+	export real Tp_min = Tp_wl
+	export real Tp_min1 = (Tp_wl+2.4n)
+}
+*run PulsoWrite
+search Tp_wl from binary(start=0.7n, stop=1n, tol=0.001n){
+	run Teste
+	run TpWrite
+}while (TpWrite->Ten1 > 0.9 && TpWrite->Ten0 < 0.1 )

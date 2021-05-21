@@ -1,0 +1,22 @@
+Exported variables from results directory:  ./MemorySchematic.raw/
+
+date               :  9:41:13 AM, Tue Jan 19, 2021
+design             :  * Crossbar one bit
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  PowerRd
+Analysis Type      :  tran
+EnergyRead      = -9.03819e-14 
+PowerRead       = -2.71146e-23 
+chargeIRd       = -5.64887e-14 
+
+
+Measurement Name   :  PowerWrt
+Analysis Type      :  tran
+EnergyWrite     = 4.91793e-13 
+PowerWrite      = 9.83586e-23 
+chargeIWr       = 3.07371e-13 
+
+

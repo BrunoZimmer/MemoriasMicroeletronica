@@ -1,0 +1,36 @@
+* Crossbar one bit
+
+simulator lang=spice
+
+.include '45nm_LP.pm'
+.include 'MTJT.spi'
+
+
+*pra escrever precisa de uma ddp de 0.9 e pra ler -0.36
+.param cap = 0.1f
+
+.param Vb = 0.55
+.param Vnb = -0.55
+.param Vhb = 0
+
+.param Vread = 1
+
+.param Tpwl = 0.3n
+.param Tpbl = 0.3n
+.param Tpwait = 0.6n
+
+Vwl WL Gnd PWL 0 'Vhb' 'Tpwl' 'Vb' '(Tpwl+Tpwait)' 'Vb' '(Tpwl+Tpwait+Tpwl)' 'Vhb' '(Tpwl+Tpwait+Tpwl+Tpwl)' 'Vnb' '(Tpwl+Tpwait+Tpwl+Tpwl+Tpwait)' 'Vnb' '(Tpwl+Tpwait+Tpwl+Tpwl+Tpwait+Tpwl)' 'Vhb'
+
+Vbl BL Gnd PWL 0 'Vhb' 'Tpbl' 'Vnb' '(Tpbl+Tpwait)' 'Vnb' '(Tpbl+Tpwait+Tpbl)' 'Vhb' '(Tpbl+Tpwait+Tpbl+Tpbl)' 'Vb' '(Tpbl+Tpwait+Tpbl+Tpbl+Tpwait)' 'Vb' '(Tpbl+Tpwait+Tpbl+Tpbl+Tpwait+Tpbl)' 'Vhb'
+
+Vgnd Gnd 0 0
+
+* Bitcell
+X1 WL BL MTJT
+
+*Bitlines Capacitance
+Cbl BL Gnd 'cap'
+
+.TRAN 10p 10n
+
+.option rawfmt="psfbin"

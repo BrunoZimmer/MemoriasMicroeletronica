@@ -1,0 +1,1172 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 19734
+Memory  available: 1.0629 GB  physical: 33.7038 GB
+Linux   : CentOS Linux release 7.6.1810 (Core) 
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+All processors running at 3300.0 MHz
+        Socket: Processors
+        0:       0,  1,  2,  3
+        
+System load averages (1min, 5min, 15min) : 111.8 %, 108.0 %, 107.0 %
+
+
+Simulating `Cell.scs' on itacolomi.lapsi at 10:28:51 AM, Fri May 1, 2020 (process id: 19734).
+Current working directory: /home/brunozimmer/Documentos/Netlist_OneCellMem/W_Capacitance/Test_Write/Q_high/Down_to_Up
+Command line:
+    /tools/cadence/SPECTRE161/tools.lnx86/bin/spectre -64 =mdl  \
+        TpWrite.mdl Cell.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+
+Warning from spectre.
+    WARNING (MDL-1452): line 1, column 1: syntax error before or at: *
+            unrecognised statement.
+
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/W_Capacitance/Test_Write/Q_high/Down_to_Up/Cell.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/W_Capacitance/Test_Write/Q_high/Down_to_Up/TRISTATE.spi
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/W_Capacitance/Test_Write/Q_high/Down_to_Up/45nm_LP.pm
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/W_Capacitance/Test_Write/Q_high/Down_to_Up/INV.spi
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/W_Capacitance/Test_Write/Q_high/Down_to_Up/PassTransistor.spi
+Time for NDB Parsing: CPU = 189.659 ms, elapsed = 626.902 ms.
+Time accumulated: CPU = 206.288 ms, elapsed = 626.909 ms.
+Peak resident memory used = 52.9 Mbytes.
+
+
+Warning from spectre during circuit read-in.
+    WARNING (SFE-397): A primitive with name NMOS_VTL already exist, will override.
+    WARNING (SFE-397): A primitive with name PMOS_VTL already exist, will override.
+    WARNING (SFE-397): A primitive with name NMOS_VTL already exist, will override.
+    WARNING (SFE-397): A primitive with name PMOS_VTL already exist, will override.
+    WARNING (SFE-397): A primitive with name NMOS_VTL already exist, will override.
+        Further occurrences of this warning will be suppressed.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 17.023 ms, elapsed = 17.7391 ms.
+Time accumulated: CPU = 223.48 ms, elapsed = 644.836 ms.
+Peak resident memory used = 59.8 Mbytes.
+
+
+Time for EDB Visiting: CPU = 892 us, elapsed = 960.827 us.
+Time accumulated: CPU = 224.534 ms, elapsed = 646.601 ms.
+Peak resident memory used = 60.4 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to node `Gnd5'.
+
+
+Global user options:
+             method = trap
+             rawfmt = psfbin
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 21
+              bsim4 17    
+          capacitor 2     
+            vsource 14    
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Notice from spectre.
+    1 warning suppressed.
+
+Time for parsing: CPU = 2.468 ms, elapsed = 88.2649 ms.
+Time accumulated: CPU = 227.154 ms, elapsed = 735.183 ms.
+Peak resident memory used = 61.9 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
++++++++++++++
+TpEn = (0.6n)
++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpEn-000_TmpEn': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    There are 4 IC nodes defined.
+
+DC simulation time: CPU = 1.348 ms, elapsed = 1.34993 ms.
+
+Notice from spectre during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpEn-000_TmpEn.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = trap
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             146
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X3.2) = 1.197 V
+I: I(Venb:p) = 1.915 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.427 ms, elapsed = 1.4298 ms.
+Intrinsic tran analysis time:    CPU = 32.696 ms, elapsed = 85.6671 ms.
+Total time required for tran analysis `TmpEn-000_TmpEn': CPU = 35.746 ms, elapsed = 88.9549 ms.
+Time accumulated: CPU = 270.203 ms, elapsed = 885.848 ms.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 1 ) :
+Ten_Q1=0.999808
+Ten_QB1=0.000161643
+Tp_En=6e-10
+Tp_Write=9e-10
+
+++++++++++++++++++++
+TpEn = ((1.5n)-(2p))
+++++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpEn-000_TmpEn': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    There are 4 IC nodes defined.
+
+DC simulation time: CPU = 933 us, elapsed = 1.05 ms.
+
+Notice from spectre during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpEn-000_TmpEn.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = trap
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             135
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X2.2) = 1.111 V
+I: I(Venb:p) = 1.991 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 988 us, elapsed = 1.17707 ms.
+Intrinsic tran analysis time:    CPU = 29.444 ms, elapsed = 81.8851 ms.
+Total time required for tran analysis `TmpEn-000_TmpEn': CPU = 31.797 ms, elapsed = 87.4619 ms.
+Time accumulated: CPU = 308.183 ms, elapsed = 988.178 ms.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 2 ) :
+Ten_Q1=0.00377797
+Ten_QB1=0.985149
+Tp_En=1.498e-09
+Tp_Write=2e-12
+
+++++++++++++++++
+TpEn = 1.049e-09
+++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpEn-000_TmpEn': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    There are 4 IC nodes defined.
+
+DC simulation time: CPU = 927 us, elapsed = 1.04308 ms.
+
+Notice from spectre during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpEn-000_TmpEn.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = trap
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             147
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X3.2) = 1.186 V
+I: I(Venb:p) = 1.915 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 982 us, elapsed = 1.17111 ms.
+Intrinsic tran analysis time:    CPU = 31.987 ms, elapsed = 95.5188 ms.
+Total time required for tran analysis `TmpEn-000_TmpEn': CPU = 34.449 ms, elapsed = 102.483 ms.
+Time accumulated: CPU = 348.978 ms, elapsed = 1.11092 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 3 ) :
+Ten_Q1=0.980035
+Ten_QB1=0.0019768
+Tp_En=1.049e-09
+Tp_Write=4.51e-10
+
++++++++++++++++++
+TpEn = 1.2735e-09
++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpEn-000_TmpEn': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    There are 4 IC nodes defined.
+
+DC simulation time: CPU = 903 us, elapsed = 915.051 us.
+
+Notice from spectre during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpEn-000_TmpEn.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = trap
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             144
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X3.2) = 1.092 V
+I: I(Venb:p) = 1.915 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 946 us, elapsed = 971.079 us.
+Intrinsic tran analysis time:    CPU = 29.979 ms, elapsed = 68.7358 ms.
+Total time required for tran analysis `TmpEn-000_TmpEn': CPU = 31.981 ms, elapsed = 70.894 ms.
+Time accumulated: CPU = 386.799 ms, elapsed = 1.18774 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 4 ) :
+Ten_Q1=0.702704
+Ten_QB1=0.141478
+Tp_En=1.2735e-09
+Tp_Write=2.265e-10
+
+++++++++++++++++++
+TpEn = 1.16125e-09
+++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpEn-000_TmpEn': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    There are 4 IC nodes defined.
+
+DC simulation time: CPU = 890 us, elapsed = 904.083 us.
+
+Notice from spectre during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpEn-000_TmpEn.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = trap
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             149
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X3.2) = 1.154 V
+I: I(Venb:p) = 1.915 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 934 us, elapsed = 956.059 us.
+Intrinsic tran analysis time:    CPU = 31.217 ms, elapsed = 93.895 ms.
+Total time required for tran analysis `TmpEn-000_TmpEn': CPU = 33.223 ms, elapsed = 96.0529 ms.
+Time accumulated: CPU = 425.89 ms, elapsed = 1.28984 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 5 ) :
+Ten_Q1=0.913487
+Ten_QB1=0.0167317
+Tp_En=1.16125e-09
+Tp_Write=3.3875e-10
+
+++++++++++++++++++
+TpEn = 1.21738e-09
+++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpEn-000_TmpEn': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    There are 4 IC nodes defined.
+
+DC simulation time: CPU = 921 us, elapsed = 976.086 us.
+
+Notice from spectre during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpEn-000_TmpEn.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = trap
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             146
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X3.2) = 1.123 V
+I: I(Venb:p) = 1.915 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 966 us, elapsed = 1.03188 ms.
+Intrinsic tran analysis time:    CPU = 30.833 ms, elapsed = 79.354 ms.
+Total time required for tran analysis `TmpEn-000_TmpEn': CPU = 32.871 ms, elapsed = 81.6021 ms.
+Time accumulated: CPU = 464.491 ms, elapsed = 1.3867 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 6 ) :
+Ten_Q1=0.831398
+Ten_QB1=0.0516583
+Tp_En=1.21738e-09
+Tp_Write=2.82625e-10
+
+++++++++++++++++++
+TpEn = 1.18931e-09
+++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpEn-000_TmpEn': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    There are 4 IC nodes defined.
+
+DC simulation time: CPU = 987 us, elapsed = 1.03593 ms.
+
+Notice from spectre during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpEn-000_TmpEn.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = trap
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             147
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X3.2) = 1.139 V
+I: I(Venb:p) = 1.915 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.05 ms, elapsed = 1.11103 ms.
+Intrinsic tran analysis time:    CPU = 30.874 ms, elapsed = 67.7111 ms.
+Total time required for tran analysis `TmpEn-000_TmpEn': CPU = 33.166 ms, elapsed = 70.194 ms.
+Time accumulated: CPU = 503.429 ms, elapsed = 1.46278 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 7 ) :
+Ten_Q1=0.877856
+Ten_QB1=0.0300105
+Tp_En=1.18931e-09
+Tp_Write=3.10687e-10
+
+++++++++++++++++++
+TpEn = 1.17528e-09
+++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpEn-000_TmpEn': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    There are 4 IC nodes defined.
+
+DC simulation time: CPU = 880 us, elapsed = 889.063 us.
+
+Notice from spectre during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpEn-000_TmpEn.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = trap
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             144
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X3.2) = 1.147 V
+I: I(Venb:p) = 1.915 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 923 us, elapsed = 941.038 us.
+Intrinsic tran analysis time:    CPU = 30.411 ms, elapsed = 81.8419 ms.
+Total time required for tran analysis `TmpEn-000_TmpEn': CPU = 32.398 ms, elapsed = 83.9739 ms.
+Time accumulated: CPU = 541.553 ms, elapsed = 1.55731 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 8 ) :
+Ten_Q1=0.896627
+Ten_QB1=0.0227971
+Tp_En=1.17528e-09
+Tp_Write=3.24719e-10
+
+++++++++++++++++++
+TpEn = 1.16827e-09
+++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpEn-000_TmpEn': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    There are 4 IC nodes defined.
+
+DC simulation time: CPU = 916 us, elapsed = 1.03188 ms.
+
+Notice from spectre during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpEn-000_TmpEn.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = trap
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             145
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X3.2) = 1.151 V
+I: I(Venb:p) = 1.915 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 974 us, elapsed = 1.76215 ms.
+Intrinsic tran analysis time:    CPU = 31.097 ms, elapsed = 76.0672 ms.
+Total time required for tran analysis `TmpEn-000_TmpEn': CPU = 33.749 ms, elapsed = 80.981 ms.
+Time accumulated: CPU = 581.159 ms, elapsed = 1.65744 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 9 ) :
+Ten_Q1=0.905099
+Ten_QB1=0.0197207
+Tp_En=1.16827e-09
+Tp_Write=3.31734e-10
+
+++++++++++++++++++
+TpEn = 1.17177e-09
+++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpEn-000_TmpEn': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    There are 4 IC nodes defined.
+
+DC simulation time: CPU = 899 us, elapsed = 914.097 us.
+
+Notice from spectre during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpEn-000_TmpEn.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = trap
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             146
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X3.2) = 1.149 V
+I: I(Venb:p) = 1.915 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 944 us, elapsed = 964.88 us.
+Intrinsic tran analysis time:    CPU = 31.094 ms, elapsed = 90.625 ms.
+Total time required for tran analysis `TmpEn-000_TmpEn': CPU = 33.171 ms, elapsed = 92.809 ms.
+Time accumulated: CPU = 620.182 ms, elapsed = 1.76473 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 10 ) :
+Ten_Q1=0.900935
+Ten_QB1=0.0212198
+Tp_En=1.17177e-09
+Tp_Write=3.28227e-10
+
+++++++++++++++++++
+TpEn = 1.17353e-09
+++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpEn-000_TmpEn': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    There are 4 IC nodes defined.
+
+DC simulation time: CPU = 876 us, elapsed = 888.109 us.
+
+Notice from spectre during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpEn-000_TmpEn.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = trap
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             146
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X3.2) = 1.148 V
+I: I(Venb:p) = 1.915 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 927 us, elapsed = 10.206 ms.
+Intrinsic tran analysis time:    CPU = 31.005 ms, elapsed = 54.1129 ms.
+Total time required for tran analysis `TmpEn-000_TmpEn': CPU = 33.008 ms, elapsed = 65.5379 ms.
+Time accumulated: CPU = 658.881 ms, elapsed = 1.83756 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 11 ) :
+Ten_Q1=0.8988
+Ten_QB1=0.0219983
+Tp_En=1.17353e-09
+Tp_Write=3.26473e-10
+
+++++++++++++++++++
+TpEn = 1.17265e-09
+++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpEn-000_TmpEn': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    There are 4 IC nodes defined.
+
+DC simulation time: CPU = 924 us, elapsed = 933.17 us.
+
+Notice from spectre during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpEn-000_TmpEn.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = trap
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             146
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X3.2) = 1.149 V
+I: I(Venb:p) = 1.915 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 979 us, elapsed = 996.113 us.
+Intrinsic tran analysis time:    CPU = 30.819 ms, elapsed = 81.6572 ms.
+Total time required for tran analysis `TmpEn-000_TmpEn': CPU = 32.976 ms, elapsed = 83.9689 ms.
+Time accumulated: CPU = 697.549 ms, elapsed = 1.93347 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 12 ) :
+Ten_Q1=0.899872
+Ten_QB1=0.0216066
+Tp_En=1.17265e-09
+Tp_Write=3.2735e-10
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+++++++++++++++++++++++++++++++++++++++++++
+Optimization completed. TpEn = 1.17177e-09
+++++++++++++++++++++++++++++++++++++++++++
+
+************************************************************
+Transient Analysis `TmpEn-000_TmpEn': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    There are 4 IC nodes defined.
+
+DC simulation time: CPU = 924 us, elapsed = 937.939 us.
+
+Notice from spectre during transient analysis `TmpEn-000_TmpEn', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpEn-000_TmpEn.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = trap
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             146
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X3.2) = 1.149 V
+I: I(Venb:p) = 1.915 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 983 us, elapsed = 1.00398 ms.
+Intrinsic tran analysis time:    CPU = 31.211 ms, elapsed = 84.3811 ms.
+Total time required for tran analysis `TmpEn-000_TmpEn': CPU = 33.39 ms, elapsed = 86.709 ms.
+Time accumulated: CPU = 736.614 ms, elapsed = 2.03135 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Aggregate audit (10:28:54 AM, Fri May 1, 2020):
+Time used: CPU = 740 ms, elapsed = 2.11 s, util. = 35.1%.
+Time spent in licensing: elapsed = 20 ms.
+Peak memory used = 65.3 Mbytes.
+Simulation started at: 10:28:51 AM, Fri May 1, 2020, ended at: 10:28:54 AM, Fri May 1, 2020, with elapsed time (wall clock): 2.11 s.
+spectre completes with 0 errors, 19 warnings, and 28 notices.

@@ -1,0 +1,200 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 13499
+Memory  available: 3.7545 GB  physical: 33.7038 GB
+Linux   : CentOS Linux release 7.6.1810 (Core) 
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+        Socket: Processors [Frequency]
+        0:       0 [2931.6],  1 [2992.2],  2 [2903.8],  3 [2980.6]
+        
+System load averages (1min, 5min, 15min) : 5.0 %, 8.5 %, 9.8 %
+
+
+Simulating `Cell.scs' on itacolomi.lapsi at 5:10:39 PM, Fri Apr 17, 2020 (process id: 13499).
+Current working directory: /home/brunozimmer/Documentos/Netlist_OneCellMem/Test_Read
+Command line:
+    /tools/cadence/SPECTRE161/tools/bin/spectre -64 Cell.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/Test_Read/Cell.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/Test_Read/TRISTATE.spi
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/Test_Read/45nm_LP.pm
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/Test_Read/INV.spi
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/Test_Read/PassTransistor.spi
+Time for NDB Parsing: CPU = 132.89 ms, elapsed = 145.137 ms.
+Time accumulated: CPU = 155.02 ms, elapsed = 145.146 ms.
+Peak resident memory used = 42.9 Mbytes.
+
+
+Warning from spectre during circuit read-in.
+    WARNING (SFE-397): A primitive with name NMOS_VTL already exist, will override.
+    WARNING (SFE-397): A primitive with name PMOS_VTL already exist, will override.
+    WARNING (SFE-397): A primitive with name NMOS_VTL already exist, will override.
+    WARNING (SFE-397): A primitive with name PMOS_VTL already exist, will override.
+    WARNING (SFE-397): A primitive with name NMOS_VTL already exist, will override.
+        Further occurrences of this warning will be suppressed.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 18.084 ms, elapsed = 17.133 ms.
+Time accumulated: CPU = 173.385 ms, elapsed = 162.428 ms.
+Peak resident memory used = 49.9 Mbytes.
+
+
+Time for EDB Visiting: CPU = 821 us, elapsed = 825.882 us.
+Time accumulated: CPU = 174.347 ms, elapsed = 163.42 ms.
+Peak resident memory used = 50.5 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to node `Vvdd'.
+
+
+Global user options:
+             rawfmt = psfbin
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 21
+              bsim4 17    
+            vsource 14    
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Notice from spectre.
+    1 warning suppressed.
+
+Time for parsing: CPU = 2.2 ms, elapsed = 46.207 ms.
+Time accumulated: CPU = 176.663 ms, elapsed = 209.759 ms.
+Peak resident memory used = 51.9 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+****************************************************
+Transient Analysis `timeSweep': time = (0 s -> 4 ns)
+****************************************************
+
+Notice from spectre during IC analysis, during transient analysis `timeSweep'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(BLB) = -118.304 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.468 ms, elapsed = 1.49107 ms.
+
+Notice from spectre during transient analysis `timeSweep'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/timeSweep.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 4 ns
+    step = 100 ps
+    maxstep = 80 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+
+.......9..
+
+Notice from spectre at time = 500.482 ps during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node X3.M_i_3:dbnode.
+Notice from spectre at time = 500.774 ps during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node X3.M_i_3:dbnode.
+
+.......9......
+
+Notice from spectre at time = 699.336 ps during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node X3.M_i_3:int_b.
+Notice from spectre at time = 699.581 ps during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node X3.M_i_3:int_b.
+
+.......9.......8.......7
+
+Notice from spectre at time = 1.20131 ns during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node M_i_1:sbnode.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             289
+
+Notice from spectre during transient analysis `timeSweep'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(BL) = 1.345 V
+I: I(Vpre:p) = 2.849 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (32.0 %)      1 (26.9 %)      2 (11.5 %)      3 (48.0 %)
+        Other   
+Initial condition solution time: CPU = 1.524 ms, elapsed = 1.55306 ms.
+Intrinsic tran analysis time:    CPU = 56.767 ms, elapsed = 78.0108 ms.
+Total time required for tran analysis `timeSweep': CPU = 59.676 ms, elapsed = 81.0611 ms.
+Time accumulated: CPU = 240.793 ms, elapsed = 295.324 ms.
+Peak resident memory used = 54 Mbytes.
+
+
+Notice from spectre.
+    41 notices suppressed.
+
+
+Aggregate audit (5:10:40 PM, Fri Apr 17, 2020):
+Time used: CPU = 243 ms, elapsed = 318 ms, util. = 76.4%.
+Time spent in licensing: elapsed = 21.9 ms, percentage of total = 6.88%.
+Peak memory used = 54.4 Mbytes.
+Simulation started at: 5:10:39 PM, Fri Apr 17, 2020, ended at: 5:10:40 PM, Fri Apr 17, 2020, with elapsed time (wall clock): 318 ms.
+spectre completes with 0 errors, 5 warnings, and 11 notices.

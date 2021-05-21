@@ -1,0 +1,76 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  4:40:04 PM, Mon Apr 20, 2020
+design             :  *Memoria de uma bitcell
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  PulsoRead-meas_search
+Analysis Type      :  tran
+Dif_tempo_min      Vread      @ 0.8       
+                   Tpread     @ 2.05605e-09   =  4.39462e-11     
+Dif_tempo_min      Vread      @ 0.79      
+                   Tpread     @ 2.05254e-09   =  4.74618e-11     
+Power              Vread      @ 0.8       
+                   Tpread     @ 2.05605e-09   =  3.75316e-15     
+Power              Vread      @ 0.79      
+                   Tpread     @ 2.05254e-09   =  4.34595e-15     
+Power1             Vread      @ 0.8       
+                   Tpread     @ 2.05605e-09   =  1.87647e-15     
+Power1             Vread      @ 0.79      
+                   Tpread     @ 2.05254e-09   =  1.90101e-15     
+Power10            Vread      @ 0.8       
+                   Tpread     @ 2.05605e-09   =  0     
+Power10            Vread      @ 0.79      
+                   Tpread     @ 2.05254e-09   =  0     
+Power11            Vread      @ 0.8       
+                   Tpread     @ 2.05605e-09   =  1.47593e-16     
+Power11            Vread      @ 0.79      
+                   Tpread     @ 2.05254e-09   =  6.80273e-16     
+Power2             Vread      @ 0.8       
+                   Tpread     @ 2.05605e-09   =  1.61277e-15     
+Power2             Vread      @ 0.79      
+                   Tpread     @ 2.05254e-09   =  1.5975e-15     
+Power3             Vread      @ 0.8       
+                   Tpread     @ 2.05605e-09   =  0     
+Power3             Vread      @ 0.79      
+                   Tpread     @ 2.05254e-09   =  0     
+Power4             Vread      @ 0.8       
+                   Tpread     @ 2.05605e-09   =  0     
+Power4             Vread      @ 0.79      
+                   Tpread     @ 2.05254e-09   =  0     
+Power5             Vread      @ 0.8       
+                   Tpread     @ 2.05605e-09   =  0     
+Power5             Vread      @ 0.79      
+                   Tpread     @ 2.05254e-09   =  0     
+Power6             Vread      @ 0.8       
+                   Tpread     @ 2.05605e-09   =  9.55819e-17     
+Power6             Vread      @ 0.79      
+                   Tpread     @ 2.05254e-09   =  1.54056e-16     
+Power7             Vread      @ 0.8       
+                   Tpread     @ 2.05605e-09   =  0     
+Power7             Vread      @ 0.79      
+                   Tpread     @ 2.05254e-09   =  0     
+Power8             Vread      @ 0.8       
+                   Tpread     @ 2.05605e-09   =  2.07545e-17     
+Power8             Vread      @ 0.79      
+                   Tpread     @ 2.05254e-09   =  1.3101e-17     
+Power9             Vread      @ 0.8       
+                   Tpread     @ 2.05605e-09   =  0     
+Power9             Vread      @ 0.79      
+                   Tpread     @ 2.05254e-09   =  0     
+Ten_dif            Vread      @ 0.8       
+                   Tpread     @ 2.05605e-09   =  0.0937449     
+Ten_dif            Vread      @ 0.79      
+                   Tpread     @ 2.05254e-09   =  0.0944861     
+Voltage            Vread      @ 0.8       
+                   Tpread     @ 2.05605e-09   =  0.8     
+Voltage            Vread      @ 0.79      
+                   Tpread     @ 2.05254e-09   =  0.79     
+
+
+
+
+

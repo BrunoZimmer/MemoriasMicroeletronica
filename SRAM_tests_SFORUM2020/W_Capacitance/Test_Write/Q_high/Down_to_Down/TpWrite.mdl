@@ -1,0 +1,24 @@
+*MDL code
+
+alias measurement TmpWL{
+	run tran (stop = 2.5n)
+	export real Ten_Q = V(Q)@1.5n
+	export real Ten_QB = V(QB)@1.5n
+
+	export real Tp_wl = TpWl
+	export real Tread_bl = 1.5n - TpWl
+}
+
+alias measurement TmpEn{
+	run tran (stop = 2.5n)
+	export real Ten_Q1 = V(BL)@TmpWL->Tp_wl
+	export real Ten_QB1 = V(BLB)@TmpWL->Tp_wl
+
+	export real Tp_En = TpEn
+	export real Tp_Write = 1.5n - TpEn
+
+}
+search TpWl from binary(start=1n, stop=1.5n, tol=0.001n){
+	run TmpWL
+}while (TmpWL->Ten_Q < 0.1 && TmpWL->Ten_QB > 0.9)
+

@@ -1,0 +1,72 @@
+*MDL code
+
+alias measurement PulsoRead{
+	run tran (stop = 3n)
+	real Ten1 = V(BL)@(2.1n-1f)
+	real Ten2 = V(BLB)@(2.1n-1f)
+	export real Ten_dif = abs(Ten1-Ten2)
+	export real Voltage = Vread
+	export real Dif_tempo_min = (2.1n - Tpread)
+
+
+	real charge1 = integ(sig=I(Vvdd), from=1.8n, to=2.1n )
+	real Power1 = abs(charge1*V(Vvdd))
+
+	real charge2 = integ(sig=I(Vpre), from=1.8n, to=2.1n )
+	real Power2= abs(charge2*V(Vpre))
+
+	real charge3 = integ(sig=I(Vdd), from=1.8n, to=2.1n )
+	real Power3= abs(charge3*V(Vdd))
+
+	real charge4 = integ(sig=I(Vwl), from=1.8n, to=2.1n )
+	real Power4 = abs(charge4*V(Vwl))
+
+	real charge5 = integ(sig=I(Ven), from=1.8n, to=2.1n )
+	real Power5= abs(charge5*V(Ven))
+
+	real charge6 = integ(sig=I(Venb), from=1.8n, to=2.1n )
+	real Power6= abs(charge6*V(Venb))
+
+	real charge7 = integ(sig=I(Vwd), from=1.8n, to=2.1n )
+	real Power7= abs(charge7*V(Vwd))
+
+	real charge8 = integ(sig=I(Vwdb), from=1.8n, to=2.1n )
+	real Power8= abs(charge8*V(Vwdb))
+
+	export real Power = (Power1 + Power2 + Power3 + Power4 + Power5 + Power6 + Power7 + Power8)
+
+}
+alias measurement Power{
+	run tran (stop = 3n)
+	real charge1 = integ(sig=I(Vvdd), from=1.8n, to=2.1n )
+	real Power1 = abs(charge1*V(Vvdd))
+
+	real charge2 = integ(sig=I(Vpre), from=1.8n, to=2.1n )
+	real Power2= abs(charge2*V(Vpre))
+
+	real charge3 = integ(sig=I(Vdd), from=1.8n, to=2.1n )
+	real Power3= abs(charge3*V(Vdd))
+
+	real charge4 = integ(sig=I(Vwl), from=1.8n, to=2.1n )
+	real Power4 = abs(charge4*V(Vwl))
+
+	real charge5 = integ(sig=I(Ven), from=1.8n, to=2.1n )
+	real Power5= abs(charge5*V(Ven))
+
+	real charge6 = integ(sig=I(Venb), from=1.8n, to=2.1n )
+	real Power6= abs(charge6*V(Venb))
+
+	real charge7 = integ(sig=I(Vwd), from=1.8n, to=2.1n )
+	real Power7= abs(charge7*V(Vwd))
+
+	real charge8 = integ(sig=I(Vwdb), from=1.8n, to=2.1n )
+	real Power8= abs(charge8*V(Vwdb))
+
+	export real Power = (Power1 + Power2 + Power3 + Power4 + Power5 + Power6 + Power7 + Power8)
+}
+
+foreach Vread from { 1.0 }{
+	search Tpread from binary(start=2.099999n, stop=1.8n, tol=0.001n){
+		run PulsoRead
+	}until (PulsoRead->Ten_dif < 0.1)
+}

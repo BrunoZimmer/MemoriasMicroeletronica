@@ -1,0 +1,4 @@
+$ Simulator: spectre (ver. 16.1.0.673.isr14)
+.title '*Memoria de uma bitcell'
+index Vwrite Ten1 Ten0 Voltage alter# 
+1 0.951187 1 0.0998112 0.951187 1 

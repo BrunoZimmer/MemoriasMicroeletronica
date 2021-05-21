@@ -1,0 +1,30 @@
+* Crossbar one bit
+
+simulator lang=spice
+
+.include '45nm_LP.pm'
+.include 'MTJT.spi'
+
+
+*pra escrever precisa de uma ddp de 0.9 e pra ler -0.36
+.param Vwrt = 0.8
+.param Vwrtb = -1
+.param Vrd = 0.4
+
+.param Vwl = -0.2
+
+.param Tpwl = 0.7n
+.param Tpbl = 0.7n
+
+Vwl WL Gnd PWL 0 0 '(Tpwl-1p)' 0 'Tpwl' 'Vwl' '(Tpwl+0.3n-1p)' 'Vwl' '(Tpwl+0.3n)' 0 '(1n+Tpwl)' 0 '(1n+Tpwl+1p)' 'Vwl' '(1n+Tpwl+0.3n-1p)' 'Vwl' '(1n+Tpwl+0.3n)' 0 '(2n+Tpwl-1p)' 0 '(2n+Tpwl)' 'Vwl' '(2n+Tpwl+0.3n-1p)' 'Vwl' '(2n+Tpwl+0.3n)' 0 '(3n+Tpwl)' 0 '(3n+Tpwl+1p)' 'Vwl' '(3n+Tpwl+0.3n-1p)' 'Vwl' '(3n+Tpwl+0.3n)' 0
+
+Vbl BL Gnd PWL 0 0 '(Tpbl-1p)' 0 'Tpbl' 'Vwrt' '(Tpbl+0.3n-1p)' 'Vwrt' '(Tpbl+0.3n)' 0 '(2n+Tpbl-1p)' 0 '(2n+Tpbl)' 'Vwrtb' '(2n+Tpbl+0.3n-1p)' 'Vwrtb' '(2n+Tpbl+0.3n)' 0
+
+Vgnd Gnd 0 0
+
+* Bitcell
+X1 WL BL MTJT
+
+.TRAN 10p 10n
+
+.option rawfmt="psfbin"

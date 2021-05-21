@@ -1,0 +1,62 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Sat Jan 16 13:10:49 2021"
+"simulator" "spectre"
+"version" "16.1.0.673.isr14"
+"date" "1:10:49 PM, Sat Jan 16, 2021"
+"design" "* Crossbar one bit"
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"PowerRd-tran" "analysisInst" (
+"tran"
+"PowerRd.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `PowerRd': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"PowerRd-meas_tran" "analysisInst" (
+"meas_tran"
+"PowerRd.meas_tran"
+"PSF"
+""
+()
+"Measurement Results for PowerRd Analysis tran"
+)
+"PowerWrt-tran" "analysisInst" (
+"tran"
+"PowerWrt.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `PowerWrt': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"PowerWrt-meas_tran" "analysisInst" (
+"meas_tran"
+"PowerWrt.meas_tran"
+"PSF"
+""
+()
+"Measurement Results for PowerWrt Analysis tran"
+)
+END

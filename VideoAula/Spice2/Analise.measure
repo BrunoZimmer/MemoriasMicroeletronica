@@ -1,0 +1,28 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  12:03:25 PM, Fri Jan 29, 2021
+design             :  *Memoria de uma bitcell
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  AnaliseWL-meas_search
+Analysis Type      :  tran
+Diferenca_WL       TpWl       @ 1.41634e-09   =  8.36639e-11     
+TempoWL            TpWl       @ 1.41634e-09   =  1.41634e-09     
+Tensao_Q           TpWl       @ 1.41634e-09   =  0.900008     
+Tensao_QB          TpWl       @ 1.41634e-09   =  0.0757646     
+
+
+Measurement Name   :  AnaliseEN-meas_search
+Analysis Type      :  tran
+Diferenca_EN       TpEn       @ 1.09124e-09   =  3.25094e-10     
+Tempo_Total        TpEn       @ 1.09124e-09   =  4.08758e-10     
+Tensao_BL          TpEn       @ 1.09124e-09   =  0.900001     
+Tensao_BLB         TpEn       @ 1.09124e-09   =  0.0214376     
+
+
+
+
+

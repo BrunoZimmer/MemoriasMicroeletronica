@@ -1,0 +1,1511 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 25745
+Memory  available: 426.7089 MB  physical: 33.7036 GB
+Linux   : CentOS Linux release 7.8.2003 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+        Socket: Processors [Frequency]
+        0:       0 [3089.4],  1 [3015.0],  2 [3012.8],  3 [3020.7]
+        
+System load averages (1min, 5min, 15min) : 8.5 %, 6.8 %, 6.2 %
+
+
+Simulating `Cell.scs' on itacolomi.lapsi at 7:30:37 AM, Thur Dec 10, 2020 (process id: 25745).
+Current working directory: /home/brunozimmer/Documentos/Netlist_OneCellMem/Efficiency/Read
+Command line:
+    /tools/cadence/SPECTRE161/tools.lnx86/bin/spectre -64 =mdl  \
+        Efficiency.mdl Cell.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+
+Warning from spectre.
+    WARNING (MDL-1452): line 1, column 1: syntax error before or at: *
+            unrecognised statement.
+
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/Efficiency/Read/Cell.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/Efficiency/Read/TRISTATE.spi
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/Efficiency/Read/45nm_LP.pm
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/Efficiency/Read/INV.spi
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/Efficiency/Read/PassTransistor.spi
+Time for NDB Parsing: CPU = 188.923 ms, elapsed = 203.477 ms.
+Time accumulated: CPU = 209.965 ms, elapsed = 203.487 ms.
+Peak resident memory used = 53 Mbytes.
+
+
+Warning from spectre during circuit read-in.
+    WARNING (SFE-397): A primitive with name NMOS_VTL already exist, will override.
+    WARNING (SFE-397): A primitive with name PMOS_VTL already exist, will override.
+    WARNING (SFE-397): A primitive with name NMOS_VTL already exist, will override.
+    WARNING (SFE-397): A primitive with name PMOS_VTL already exist, will override.
+    WARNING (SFE-397): A primitive with name NMOS_VTL already exist, will override.
+        Further occurrences of this warning will be suppressed.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 16.675 ms, elapsed = 16.7382 ms.
+Time accumulated: CPU = 226.774 ms, elapsed = 220.374 ms.
+Peak resident memory used = 59.8 Mbytes.
+
+
+Time for EDB Visiting: CPU = 811 us, elapsed = 815.153 us.
+Time accumulated: CPU = 227.706 ms, elapsed = 221.326 ms.
+Peak resident memory used = 60.4 Mbytes.
+
+
+Global user options:
+             rawfmt = psfbin
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 21
+              bsim4 17    
+            vsource 14    
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Notice from spectre.
+    1 warning suppressed.
+
+Time for parsing: CPU = 2.426 ms, elapsed = 46.4921 ms.
+Time accumulated: CPU = 230.237 ms, elapsed = 267.936 ms.
+Peak resident memory used = 61.8 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+++++++++++++++++++++
+Tpread = (2.099999n)
+++++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+******************************************************************
+Transient Analysis `PulsoRead-000_PulsoRead': time = (0 s -> 3 ns)
+******************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(BLB) = -118.301 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.409 ms, elapsed = 1.43409 ms.
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/PulsoRead-000_PulsoRead.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+
+........9........8........
+
+Notice from spectre at time = 912.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7
+
+Notice from spectre at time = 972.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7..
+
+Notice from spectre at time = 999.999 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18796 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.2 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             367
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X3.2) = 1.338 V
+I: I(Vpre:p) = 962.2 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (11.6 %)      1 (14.0 %)      2 (67.4 %)      3 (7.0 %)
+        Other   
+Initial condition solution time: CPU = 1.461 ms, elapsed = 1.49393 ms.
+Intrinsic tran analysis time:    CPU = 105.711 ms, elapsed = 135.315 ms.
+Total time required for tran analysis `PulsoRead-000_PulsoRead': CPU = 109.586 ms, elapsed = 139.349 ms.
+Time accumulated: CPU = 348.524 ms, elapsed = 478.683 ms.
+Peak resident memory used = 65.2 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    54 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 1 ) :
+Ten_dif=1.10386
+Voltage=1
+Dif_tempo_min=1e-15
+Power=1.18907e-15
+
++++++++++++++++
+Tpread = (1.8n)
++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+******************************************************************
+Transient Analysis `PulsoRead-000_PulsoRead': time = (0 s -> 3 ns)
+******************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(BLB) = -118.301 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.011 ms, elapsed = 1.03903 ms.
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/PulsoRead-000_PulsoRead.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+
+........9........8........
+
+Notice from spectre at time = 912.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7
+
+Notice from spectre at time = 972.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7..
+
+Notice from spectre at time = 999.999 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18796 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.2 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             412
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(BLB) = 1.436 V
+I: I(Vpre:p) = 978.6 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (12.7 %)      1 (14.8 %)      2 (72.7 %)      3 (5.7 %)
+        Other   
+Initial condition solution time: CPU = 1.048 ms, elapsed = 1.0829 ms.
+Intrinsic tran analysis time:    CPU = 93.206 ms, elapsed = 103.638 ms.
+Total time required for tran analysis `PulsoRead-000_PulsoRead': CPU = 95.728 ms, elapsed = 106.316 ms.
+Time accumulated: CPU = 450.003 ms, elapsed = 590.833 ms.
+Peak resident memory used = 65.3 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    56 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 2 ) :
+Ten_dif=1.32424e-06
+Voltage=1
+Dif_tempo_min=3e-10
+Power=7.6389e-15
+
++++++++++++++++++
+Tpread = 1.95e-09
++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+******************************************************************
+Transient Analysis `PulsoRead-000_PulsoRead': time = (0 s -> 3 ns)
+******************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(BLB) = -118.301 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.044 ms, elapsed = 1.07288 ms.
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/PulsoRead-000_PulsoRead.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+
+........9........8........
+
+Notice from spectre at time = 912.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7
+
+Notice from spectre at time = 972.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7..
+
+Notice from spectre at time = 999.999 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18796 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.2 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             411
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(BLB) = 1.436 V
+I: I(Vpre:p) = 978.6 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (25.4 %)      1 (14.9 %)      2 (62.1 %)      3 (6.2 %)
+        Other   
+Initial condition solution time: CPU = 1.081 ms, elapsed = 1.11794 ms.
+Intrinsic tran analysis time:    CPU = 94.143 ms, elapsed = 108.914 ms.
+Total time required for tran analysis `PulsoRead-000_PulsoRead': CPU = 96.892 ms, elapsed = 111.839 ms.
+Time accumulated: CPU = 552.784 ms, elapsed = 708.646 ms.
+Peak resident memory used = 65.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    55 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 3 ) :
+Ten_dif=1.42501e-06
+Voltage=1
+Dif_tempo_min=1.50001e-10
+Power=8.13114e-15
+
+++++++++++++++++++
+Tpread = 2.025e-09
+++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+******************************************************************
+Transient Analysis `PulsoRead-000_PulsoRead': time = (0 s -> 3 ns)
+******************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(BLB) = -118.301 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 948 us, elapsed = 972.033 us.
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/PulsoRead-000_PulsoRead.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+
+........9........8........
+
+Notice from spectre at time = 912.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7
+
+Notice from spectre at time = 972.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7..
+
+Notice from spectre at time = 999.999 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18796 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.2 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             411
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(BLB) = 1.436 V
+I: I(Vpre:p) = 978.6 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (35.4 %)      1 (12.8 %)      2 (54.5 %)      3 (9.1 %)
+        Other   
+Initial condition solution time: CPU = 982 us, elapsed = 1.01304 ms.
+Intrinsic tran analysis time:    CPU = 94.819 ms, elapsed = 109.295 ms.
+Total time required for tran analysis `PulsoRead-000_PulsoRead': CPU = 97.262 ms, elapsed = 111.883 ms.
+Time accumulated: CPU = 655.7 ms, elapsed = 826.254 ms.
+Peak resident memory used = 65.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    55 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 4 ) :
+Ten_dif=1.56548e-07
+Voltage=1
+Dif_tempo_min=7.50008e-11
+Power=8.29737e-15
+
++++++++++++++++++++
+Tpread = 2.0625e-09
++++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+******************************************************************
+Transient Analysis `PulsoRead-000_PulsoRead': time = (0 s -> 3 ns)
+******************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(BLB) = -118.301 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 957 us, elapsed = 977.039 us.
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/PulsoRead-000_PulsoRead.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+
+........9........8........
+
+Notice from spectre at time = 912.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7
+
+Notice from spectre at time = 972.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7..
+
+Notice from spectre at time = 999.999 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18796 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.2 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             410
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(BLB) = 1.428 V
+I: I(Vpre:p) = 980.4 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (42.2 %)      1 (13.3 %)      2 (48.9 %)      3 (10.1 %)
+        Other   
+Initial condition solution time: CPU = 990 us, elapsed = 1.01805 ms.
+Intrinsic tran analysis time:    CPU = 94.366 ms, elapsed = 107.569 ms.
+Total time required for tran analysis `PulsoRead-000_PulsoRead': CPU = 96.798 ms, elapsed = 110.136 ms.
+Time accumulated: CPU = 757.947 ms, elapsed = 941.914 ms.
+Peak resident memory used = 65.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    51 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 5 ) :
+Ten_dif=0.000205016
+Voltage=1
+Dif_tempo_min=3.75009e-11
+Power=8.02675e-15
+
+++++++++++++++++++++
+Tpread = 2.08125e-09
+++++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+******************************************************************
+Transient Analysis `PulsoRead-000_PulsoRead': time = (0 s -> 3 ns)
+******************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(BLB) = -118.301 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 940 us, elapsed = 959.873 us.
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/PulsoRead-000_PulsoRead.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+
+........9........8........
+
+Notice from spectre at time = 912.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7
+
+Notice from spectre at time = 972.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7..
+
+Notice from spectre at time = 999.999 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18796 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.2 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             408
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(M_i_4:sbnode) = 1.368 V
+I: I(Vpre:p) = 1.014 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (47.5 %)      1 (12.9 %)      2 (44.6 %)      3 (9.1 %)
+        Other   
+Initial condition solution time: CPU = 975 us, elapsed = 1.00088 ms.
+Intrinsic tran analysis time:    CPU = 94.188 ms, elapsed = 108.338 ms.
+Total time required for tran analysis `PulsoRead-000_PulsoRead': CPU = 96.632 ms, elapsed = 110.897 ms.
+Time accumulated: CPU = 860.502 ms, elapsed = 1.05882 s.
+Peak resident memory used = 65.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    54 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 6 ) :
+Ten_dif=0.0459121
+Voltage=1
+Dif_tempo_min=1.87509e-11
+Power=6.59497e-15
+
+++++++++++++++++++++
+Tpread = 2.09062e-09
+++++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+******************************************************************
+Transient Analysis `PulsoRead-000_PulsoRead': time = (0 s -> 3 ns)
+******************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(BLB) = -118.301 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.072 ms, elapsed = 1.10006 ms.
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/PulsoRead-000_PulsoRead.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+
+........9........8........
+
+Notice from spectre at time = 912.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7
+
+Notice from spectre at time = 972.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7..
+
+Notice from spectre at time = 999.999 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18796 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.2 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             401
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(M_i_4:sbnode) = 1.386 V
+I: I(Vpre:p) = 1.054 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (51.8 %)      1 (13.3 %)      2 (41.1 %)      3 (10.7 %)
+        Other   
+Initial condition solution time: CPU = 1.11 ms, elapsed = 1.14489 ms.
+Intrinsic tran analysis time:    CPU = 91.122 ms, elapsed = 104.377 ms.
+Total time required for tran analysis `PulsoRead-000_PulsoRead': CPU = 94.009 ms, elapsed = 107.418 ms.
+Time accumulated: CPU = 960.403 ms, elapsed = 1.17221 s.
+Peak resident memory used = 65.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    53 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 7 ) :
+Ten_dif=0.479101
+Voltage=1
+Dif_tempo_min=9.37597e-12
+Power=4.13875e-15
+
+++++++++++++++++++++
+Tpread = 2.08594e-09
+++++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+******************************************************************
+Transient Analysis `PulsoRead-000_PulsoRead': time = (0 s -> 3 ns)
+******************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(BLB) = -118.301 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.01 ms, elapsed = 1.03498 ms.
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/PulsoRead-000_PulsoRead.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+
+........9........8........
+
+Notice from spectre at time = 912.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7
+
+Notice from spectre at time = 972.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7..
+
+Notice from spectre at time = 999.999 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18796 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.2 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             404
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(M_i_4:sbnode) = 1.378 V
+I: I(Vpre:p) = 1.053 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (55.2 %)      1 (14.4 %)      2 (38.7 %)      3 (10.6 %)
+        Other   
+Initial condition solution time: CPU = 1.048 ms, elapsed = 1.07908 ms.
+Intrinsic tran analysis time:    CPU = 92.635 ms, elapsed = 109.336 ms.
+Total time required for tran analysis `PulsoRead-000_PulsoRead': CPU = 95.376 ms, elapsed = 112.235 ms.
+Time accumulated: CPU = 1.06177 s, elapsed = 1.29051 s.
+Peak resident memory used = 65.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    54 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 8 ) :
+Ten_dif=0.206169
+Voltage=1
+Dif_tempo_min=1.40635e-11
+Power=5.49705e-15
+
+++++++++++++++++++++
+Tpread = 2.08359e-09
+++++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+******************************************************************
+Transient Analysis `PulsoRead-000_PulsoRead': time = (0 s -> 3 ns)
+******************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(BLB) = -118.301 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 986 us, elapsed = 1.00803 ms.
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/PulsoRead-000_PulsoRead.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+
+........9........8........
+
+Notice from spectre at time = 912.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7
+
+Notice from spectre at time = 972.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7..
+
+Notice from spectre at time = 999.999 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18796 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.2 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             409
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(M_i_4:sbnode) = 1.372 V
+I: I(Vpre:p) = 1.031 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (58.1 %)      1 (14.0 %)      2 (36.8 %)      3 (10.4 %)
+        Other   
+Initial condition solution time: CPU = 1.022 ms, elapsed = 1.05095 ms.
+Intrinsic tran analysis time:    CPU = 94.614 ms, elapsed = 109.759 ms.
+Total time required for tran analysis `PulsoRead-000_PulsoRead': CPU = 97.224 ms, elapsed = 112.497 ms.
+Time accumulated: CPU = 1.16473 s, elapsed = 1.40882 s.
+Peak resident memory used = 65.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    50 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 9 ) :
+Ten_dif=0.108187
+Voltage=1
+Dif_tempo_min=1.64072e-11
+Power=6.08597e-15
+
+++++++++++++++++++++
+Tpread = 2.08242e-09
+++++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+******************************************************************
+Transient Analysis `PulsoRead-000_PulsoRead': time = (0 s -> 3 ns)
+******************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(BLB) = -118.301 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 986 us, elapsed = 1.00398 ms.
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/PulsoRead-000_PulsoRead.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+
+........9........8........
+
+Notice from spectre at time = 912.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7
+
+Notice from spectre at time = 972.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7..
+
+Notice from spectre at time = 999.999 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18796 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.2 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             423
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(M_i_4:sbnode) = 1.37 V
+I: I(Vpre:p) = 1.021 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (60.8 %)      1 (13.5 %)      2 (34.7 %)      3 (11.5 %)
+        Other   
+Initial condition solution time: CPU = 1.022 ms, elapsed = 1.04809 ms.
+Intrinsic tran analysis time:    CPU = 98.341 ms, elapsed = 111.814 ms.
+Total time required for tran analysis `PulsoRead-000_PulsoRead': CPU = 101.083 ms, elapsed = 114.693 ms.
+Time accumulated: CPU = 1.27153 s, elapsed = 1.52931 s.
+Peak resident memory used = 65.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    53 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 10 ) :
+Ten_dif=0.0703274
+Voltage=1
+Dif_tempo_min=1.75791e-11
+Power=6.36007e-15
+
+++++++++++++++++++++
+Tpread = 2.08301e-09
+++++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+******************************************************************
+Transient Analysis `PulsoRead-000_PulsoRead': time = (0 s -> 3 ns)
+******************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(BLB) = -118.301 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 945 us, elapsed = 966.072 us.
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/PulsoRead-000_PulsoRead.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+
+........9........8........
+
+Notice from spectre at time = 912.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7
+
+Notice from spectre at time = 972.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7..
+
+Notice from spectre at time = 999.999 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18796 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.2 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             411
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(M_i_4:sbnode) = 1.371 V
+I: I(Vpre:p) = 1.027 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (62.5 %)      1 (13.0 %)      2 (33.8 %)      3 (11.2 %)
+        Other   
+Initial condition solution time: CPU = 989 us, elapsed = 1.01805 ms.
+Intrinsic tran analysis time:    CPU = 94.144 ms, elapsed = 112.333 ms.
+Total time required for tran analysis `PulsoRead-000_PulsoRead': CPU = 96.695 ms, elapsed = 115.005 ms.
+Time accumulated: CPU = 1.37382 s, elapsed = 1.64998 s.
+Peak resident memory used = 65.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    53 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 11 ) :
+Ten_dif=0.0904631
+Voltage=1
+Dif_tempo_min=1.69931e-11
+Power=6.21647e-15
+
+++++++++++++++++++++++++++++++++++++++++++++
+Optimization completed. Tpread = 2.08301e-09
+++++++++++++++++++++++++++++++++++++++++++++
+
+******************************************************************
+Transient Analysis `PulsoRead-000_PulsoRead': time = (0 s -> 3 ns)
+******************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(BLB) = -118.301 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 969 us, elapsed = 994.921 us.
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/PulsoRead-000_PulsoRead.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 3 ns
+    step = 3 ps
+    maxstep = 60 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+
+........9........8........
+
+Notice from spectre at time = 912.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7
+
+Notice from spectre at time = 972.911 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7..
+
+Notice from spectre at time = 999.999 ps during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node X2.M_i_0:int_b.
+
+........9........8........7.......
+
+Notice from spectre at time = 1.18796 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+........9........8........7........6
+
+Notice from spectre at time = 1.2 ns during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             411
+
+Notice from spectre during transient analysis `PulsoRead-000_PulsoRead', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(M_i_4:sbnode) = 1.371 V
+I: I(Vpre:p) = 1.027 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (64.5 %)      1 (12.9 %)      2 (32.6 %)      3 (10.6 %)
+        Other   
+Initial condition solution time: CPU = 1.002 ms, elapsed = 1.03593 ms.
+Intrinsic tran analysis time:    CPU = 95.065 ms, elapsed = 110.034 ms.
+Total time required for tran analysis `PulsoRead-000_PulsoRead': CPU = 97.428 ms, elapsed = 112.562 ms.
+Time accumulated: CPU = 1.47631 s, elapsed = 1.76768 s.
+Peak resident memory used = 65.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    53 notices suppressed.
+
+
+Aggregate audit (7:30:39 AM, Thur Dec 10, 2020):
+Time used: CPU = 1.48 s, elapsed = 1.82 s, util. = 81.4%.
+Time spent in licensing: elapsed = 23.7 ms.
+Peak memory used = 66.2 Mbytes.
+Simulation started at: 7:30:37 AM, Thur Dec 10, 2020, ended at: 7:30:39 AM, Thur Dec 10, 2020, with elapsed time (wall clock): 1.82 s.
+spectre completes with 0 errors, 17 warnings, and 109 notices.

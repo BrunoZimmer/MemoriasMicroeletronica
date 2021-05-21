@@ -1,0 +1,58 @@
+* Crossbar one bit
+
+simulator lang=spice
+
+.include '45nm_LP.pm'
+.include 'MTJT.spi'
+.include 'TRISTATE.spi'
+
+.param cap = 6.15f
+
+.param Vb = 2
+.param Vhb = 1
+.param Vnb = 0
+
+.param Vrd = 1.2
+
+.param Vwl = 1.2
+
+.param Tpwl = 0.7n
+.param Tpbl = 0.7n
+.param Tpen = 0.7n
+.param Tppre = 0.7n
+
+Vgnd Gnd 0 0
+Vdd Vdd 0 0
+
+* Wordline cell access
+Vwl WL Gnd PWL 0 'Vhb' '(Tpwl-1p)' 'Vhb' 'Tpwl' 0 '(Tpwl+0.3n-1p)' 0 '(Tpwl+0.3n)' 'Vhb' '(1n+Tpwl)' 'Vhb' '(1n+Tpwl+1p)' 'Vwl' '(1n+Tpwl+0.3n-1p)' 'Vwl' '(1n+Tpwl+0.3n)' 'Vhb' '(2n+Tpwl-1p)' 'Vhb' '(2n+Tpwl)' 'Vb' '(2n+Tpwl+0.3n-1p)' 'Vb' '(2n+Tpwl+0.3n)' 'Vhb' '(3n+Tpwl)' 'Vhb' '(3n+Tpwl+1p)' 'Vwl' '(3n+Tpwl+0.3n-1p)' 'Vwl' '(3n+Tpwl+0.3n)' 'Vhb'
+
+* Write operation
+Vwd WD Gnd PWL 0 'Vhb' '(Tpbl-1p)' 'Vhb' 'Tpbl' 'Vb' '(Tpbl+0.3n-1p)' 'Vb' '(Tpbl+0.3n)' 'Vhb' '(2n+Tpbl-1p)' 'Vhb' '(2n+Tpbl)' 0 '(2n+Tpbl+0.3n-1p)' 0 '(2n+Tpbl+0.3n)' 'Vhb'
+Ven EN Gnd PWL  0 0 '(Tpen-1p)' 0 'Tpen' 1 '(Tpen+0.3n-1p)' 1 '(Tpen+0.3n)' 0 '(2n+Tpen-1p)' 0 '(2n+Tpen)' 1 '(2n+Tpen+0.3n-1p)' 1 '(2n+Tpen+0.3n)' 0
+Venb ENB Gnd PWL  0 1 '(Tpen-1p)' 1 'Tpen' 0 '(Tpen+0.3n-1p)' 0 '(Tpen+0.3n)' 1 '(2n+Tpen-1p)' 1 '(2n+Tpen)' 0 '(2n+Tpen+0.3n-1p)' 0 '(2n+Tpen+0.3n)' 1
+
+* Read Operation
+Vvrd Vvrd Gnd 'Vrd'
+Vpre PRE Gnd PWL 0 1 '(1n+Tppre-0.3n-1p)' 1 '(1n+Tppre-0.3n)' 0 '(1n+Tppre-2p)' 0 '(1n+Tppre-1p)' 1  '(3n+Tppre-0.3n-1p)' 1 '(3n+Tppre-0.3n)' 0 '(3n+Tppre-2p)' 0 '(3n+Tppre-1p)' 1 
+
+* Corrente em BL
+Vbli BL BLi 0 
+
+* Bitcell
+X1 WL BL MTJT
+
+* Write Driver
+*TRISTATE A Y EN ENB VDD VSS 
+X2 WD BL EN ENB Vdd Gnd TI
+
+*Pre Charge
+*Transistor Drain Gate Source Bulk
+M_i_1 BL PRE Vvrd Vdd PMOS W=0.630000U L=0.050000U
+
+*Bitlines Capacitance
+Cbl BL Gnd 'cap'
+
+.TRAN 1f 10n
+
+.option rawfmt="psfbin"

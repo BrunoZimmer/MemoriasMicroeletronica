@@ -1,0 +1,21 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  12:15:06 PM, Thur Apr 23, 2020
+design             :  *Memoria w/ 1 bitcell
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  TpWrite-meas_search
+Analysis Type      :  tran
+Dif_tmin           Tp_wl      @ 8.63477e-10   =  1.36523e-10     
+Ten0               Tp_wl      @ 8.63477e-10   =  0.099107     
+Ten1               Tp_wl      @ 8.63477e-10   =  0.997926     
+Tp_min             Tp_wl      @ 8.63477e-10   =  8.63477e-10     
+Tp_min1            Tp_wl      @ 8.63477e-10   =  3.26348e-09     
+
+
+
+
+

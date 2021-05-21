@@ -1,0 +1,20 @@
+*MDL code
+
+alias measurement TmpWL{
+	run tran (stop = 2.5n)
+	export real Ten_Q = V(Q)@1.5n
+	export real Ten_QB = V(QB)@1.5n
+
+	export real Tp_wl = TpWl
+	export real Tp_wl1 = TpWl-10p
+}
+
+alias measurement TmpEn{
+	run tran (stop = 2.5n)
+	export real Ten_Q1 = V(BL)@TmpWL->Tp_wl
+	export real Ten_QB1 = V(BLB)@TmpWL->Tp_wl
+
+	export real Tp_En = TpEn
+	export real Tp_Write = 1.5n - TpEn
+
+}

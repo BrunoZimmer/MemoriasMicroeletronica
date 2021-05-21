@@ -1,0 +1,9 @@
+*passtransistor
+
+.SUBCKT PT IN OUT EN ENB VDD VSS 
+
+*M_i Drain Gate Source Bulk
+M_i_8 OUT EN IN VSS NMOS W=0.415000U L=0.050000U
+M_i_9 OUT ENB IN VDD PMOS W=0.630000U L=0.050000U
+
+.ENDS 

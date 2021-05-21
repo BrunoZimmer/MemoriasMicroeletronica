@@ -1,0 +1,19 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  2:46:02 PM, Thur Apr 23, 2020
+design             :  *Memoria de uma bitcell
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  PulsoWrite-meas_search
+Analysis Type      :  tran
+Ten0               Vwrite     @ 0.788132     =  0.00643024     
+Ten1               Vwrite     @ 0.788132     =  1     
+Voltage            Vwrite     @ 0.788132     =  0.788132     
+
+
+
+
+

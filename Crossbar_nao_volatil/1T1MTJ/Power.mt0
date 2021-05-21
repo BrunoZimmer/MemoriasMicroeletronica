@@ -1,0 +1,5 @@
+$ Simulator: spectre (ver. 16.1.0.673.isr14)
+.title '* Crossbar one bit'
+chargeIRd EnergyRead PowerRead alter# 
+-5.64887e-14 -9.03819e-14 -2.71146e-23 1 
+

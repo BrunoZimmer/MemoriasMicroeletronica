@@ -1,0 +1,24 @@
+* Aula 1
+
+simulator lang= spice
+
+.param Vdd = 1
+
+.param resistor1 = 270
+.param resistor2 = 1k
+.param resistor3 = 1800
+.param resistor4 = 3300
+
+Vvdd A Gnd 'Vdd'
+
+R1 A B 'resistor2'
+
+R2 B C 'resistor1'
+R3 B C 'resistor3'
+
+R4 C Gnd 'resistor1'
+R5 C Gnd 'resistor1'
+R6 C Gnd 'resistor2'
+R7 C Gnd 'resistor4'
+
+.DC

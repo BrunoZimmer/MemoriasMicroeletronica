@@ -1,0 +1,50 @@
+*Memoria de uma bitcell
+
+simulator lang=spice
+
+.include '45nm_LP.pm'
+.include 'Bitcell.spi'
+.include 'TRISTATE.spi'
+
+.param Vdd = 1
+.param TpEn = 0.5n
+.param TpWl = 1.5n
+.param cap = 15f
+          *PWL s V    
+Vwl WL Gnd PWL 0 0 'TpWl' 0 'TpWl+1p' 1 '(TpWl+1.5n)' 1 '(TpWl+1.5n+1p)' 0
+Vwdb WDB Gnd 1
+Vwd WD Gnd 0
+
+*En liga em 1  ENB em 0
+Venb ENB Gnd PWL 0 1 '(TpEn-1p)' 1 'TpEn' 0 2.5n 0 (2.5n+1p) 1 
+Ven EN Gnd PWL 0 0 '(TpEn-1p)' 0 'TpEn' 1 2.5n 1 (2.5n+1p) 0 
+Vpre PRE Gnd PWL 0 1 
+
+Vvdd Vvdd Gnd 'Vdd'
+
+Vdd Vdd Gnd 1
+Vgnd Gnd 0 0
+
+*Bitcell
+X0 BL BLB WL Vdd Gnd CELL
+
+*Write cell
+*TRISTATE A Y EN ENB VDD VSS 
+X3 WD BL EN ENB Vdd Gnd TI
+X2 WDB BLB EN ENB Vdd Gnd TI
+
+*Pre Charge
+M_i_2 BL PRE Vvdd Vdd PMOS_VTL W=0.630000U L=0.050000U
+M_i_3 BLB PRE Vvdd Vdd PMOS_VTL W=0.630000U L=0.050000U
+M_i_4 BL PRE BLB Vdd PMOS_VTL W=0.630000U L=0.050000U
+
+*Bitlines Capacitance
+Cbl BL Gnd 'cap'
+Cblb BLB Gnd 'cap'
+
+.DC
+
+.option method=trap
+.option rawfmt="psfbin"
+
+.IC V(BL)=0 V(BLB)=1 V(X0.Q)=0 V(X0.QB)=1

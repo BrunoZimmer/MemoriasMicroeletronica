@@ -1,0 +1,13 @@
+*MDL code
+
+alias measurement PulsoRead{
+	run tran (stop = 3n)
+	real Ten1 = V(BL)@(2.1n-1f)
+	real Ten2 = V(BLB)@(2.1n-1f)
+	export real Ten_dif = abs(Ten1-Ten2)
+	export real Dif_tempo_min = (2.1n - Tpread)
+
+}
+search Tpread from binary(start=2.099999n, stop=1.8n, tol=0.001n){
+	run PulsoRead
+}until (PulsoRead->Ten_dif < 0.1)

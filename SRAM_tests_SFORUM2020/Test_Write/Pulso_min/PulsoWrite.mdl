@@ -1,0 +1,12 @@
+*MDL code
+
+alias measurement PulsoWrite{
+	run tran (stop = 5n)
+	export real Ten1 = V(QB)@1.3n
+	export real Ten0 = V(QB)@4n
+	export real Voltage = Vwrite
+}
+*run PulsoWrite
+search Vwrite from binary(start=1, stop=0, tol=0.00001){
+	run PulsoWrite
+}while (PulsoWrite->Ten1 > 0.9 && PulsoWrite->Ten0 < 0.1 )

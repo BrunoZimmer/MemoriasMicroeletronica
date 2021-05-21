@@ -1,0 +1,33 @@
+*MDL
+
+alias measurement AnaliseWL{
+	run tran(stop = 3n)
+
+	export real Tensao_Q = V(X0.Q)@1.5n
+	export real Tensao_QB = V(X0.QB)@1.5n
+
+	export real TempoWL = TpWl
+	export real Diferenca_WL = 1.5n-TpWl
+}
+
+
+alias measurement AnaliseEN{
+	run tran(stop = 3n)
+
+	export real Tensao_BL = V(BL)@AnaliseWL->TempoWL
+	export real Tensao_BLB = V(BLB)@AnaliseWL->TempoWL
+
+	real TempoEN = TpEn
+	export real Diferenca_EN = TpWl - TpEn
+
+	export real Tempo_Total = 1.5n-TpEN
+}
+
+search TpWl from binary(start=1n, stop = 1.5n, tol = 1f){
+	run AnaliseWL
+}while (AnaliseWL->Tensao_Q >0.9 && AnaliseWL->Tensao_QB < 0.1)
+
+search TpEn from binary(start=0.6n, stop = (TpWl-2p), tol = 1f){
+	run AnaliseEN
+}while (AnaliseEN->Tensao_BL >0.9 && AnaliseEN->Tensao_BLB < 0.1)
+

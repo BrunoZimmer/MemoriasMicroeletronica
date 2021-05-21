@@ -1,0 +1,119 @@
+* Crossbar one bit
+
+simulator lang=spice
+
+.include '45nm_LP.pm'
+.include 'MTJT.spi'
+.include 'TRISTATE.spi'
+
+
+*time and voltage variables
+*bitline capacitance
+.param cap = 0.1f
+
+*Vdd
+.param Vvdd = 1
+
+*Ground
+.param Vgnd = 0
+
+*Reading voltage
+.param Vread = 1
+.param Vreadb = 0.4
+
+*pulse time
+.param TpPulse = 1.8n
+.param TpDelay = 2n
+
+* Vdd
+Vdd Vdd Gnd 'Vvdd' 
+
+* Wordlines voltage controller
+Vwl1 WL1T Gnd PWL 0 'Vgnd' 'TpDelay-1p' 'Vgnd' 'TpDelay' 0 'TpDelay+TpPulse-1p' 0 'TpDelay+TpPulse' 'Vgnd'
+Vwl2 WL2T Gnd PWL 0 'Vgnd'
+Vwl3 WL3T Gnd PWL 0 'Vgnd'
+
+
+*Bitlines voltage controller
+Vbl1 BL1T Gnd PWL 0 'Vgnd' 'TpDelay-1p' 'Vgnd' 'TpDelay' 1 'TpDelay+TpPulse-1p' 1 'TpDelay+TpPulse' 'Vgnd'
+Vbl2 BL2T Gnd PWL 0 'Vgnd'
+Vbl3 BL3T Gnd PWL 0 'Vgnd'
+
+*0 'Vgnd' 'TpDelay-1p' 'Vgnd' 'TpDelay' 'Vvdd' 'TpDelay+TpPulse-1p+0.2n' 'Vvdd' 'TpDelay+TpPulse+0.2n' 'Vgnd'
+*Wordlines access controller
+Vwl1en ENWl1 Gnd PWL 0 1
+Vwl2en ENWl2 Gnd PWL 0 0
+Vwl3en ENWl3 Gnd PWL 0 0
+
+*0 'Vgnd' 'TpDelay-1p' 'Vgnd' 'TpDelay' 'Vvdd' 'TpDelay+TpPulse-1p+0.2n' 'Vvdd' 'TpDelay+TpPulse+0.2n' 'Vgnd'
+*Wordlines access controller
+Vbl1en ENBl1 Gnd PWL 0 1
+Vbl2en ENBl2 Gnd PWL 0 0
+Vbl3en ENBl3 Gnd PWL 0 0
+
+* Bitcell
+*X1 WL1 BL1 MTJT
+X2 WL1 BL2 MTJT
+X3 WL1 BL3 MTJT
+X4 WL2 BL1 MTJT
+X5 WL2 BL2 MTJT
+X6 WL2 BL3 MTJT
+X7 WL3 BL1 MTJT
+X8 WL3 BL2 MTJT
+X9 WL3 BL3 MTJT
+
+*M_i Drain Gate Source Bulk
+*Bitcell access - Tristates
+*PT A Y EN ENB
+*X10 ENBl1 ENBBl1 Vdd Gnd INV
+*X11 BL1T BL1 ENBl1 ENBBl1 PT
+
+X10 BL1T BL1 ENBl1 Vdd Gnd TI
+*X11 BL1T BL1 ENBl2 ENBl1 Vdd Gnd PT
+*M_i_1 Gnd ENBl1 Vdd Vdd PMOS W=0.630000U L=0.050000U
+
+*X12 ENBl2 ENBBl2 Vdd Gnd INV
+*X13 BL2T BL2 ENBl2 ENBBl2 PT
+
+X11 BL2T BL2 ENBl2 Vdd Gnd TI
+*M_i_2 Gnd ENBl2 Vdd Vdd PMOS W=0.630000U L=0.050000U
+
+*X14 ENBl3 ENBBl3 Vdd Gnd INV
+*X15 BL3T BL3 ENBl3 ENBBl3 PT
+
+X12 BL3T BL3 ENBl3 Vdd Gnd TI
+*M_i_3 Gnd ENBl3 Vdd Vdd PMOS W=0.630000U L=0.050000U
+
+*Wordline access - Tristates
+*X16 ENWl1 ENBWl1 Vdd Gnd INV
+*X17 WL1T WL1 ENWl1 ENBWl1 PT
+
+X13 WL1T WL1 ENWl1 Vdd Gnd TI
+*X17 WL1T WL1 ENWl2 ENWl1 Vdd Gnd PT
+*M_i_4 Gnd ENWl1 Vdd Vdd PMOS W=0.630000U L=0.050000U
+
+*X18 ENWl2 ENBWl2 Vdd Gnd INV
+*X19 WL2T WL2 ENWl2 ENBWl2 PT
+
+X14 WL2T WL2 ENWl2 Vdd Gnd TI
+*M_i_5 Gnd ENWl2 Vdd Vdd PMOS W=0.630000U L=0.050000U
+
+*X20 ENWl3 ENBWl3 Vdd Gnd INV
+*X21 WL3T WL3 ENWl3 ENBWl3 PT
+
+X15 WL3T WL3 ENWl3 Vdd Gnd TI
+*M_i_6 Gnd ENWl3 Vdd Vdd PMOS W=0.630000U L=0.050000U
+
+*Bitlines Capacitance
+Cbl1 BL1 Gnd 'cap'
+Cbl2 BL2 Gnd 'cap'
+Cbl3 BL3 Gnd 'cap'
+
+Cwl1 WL1 Gnd 'cap'
+Cwl2 WL2 Gnd 'cap'
+Cwl3 WL3 Gnd 'cap'
+
+.TRAN 1p 10n
+.IC V(BL1)=0 V(BL2)=0 V(BL3)=0 V(wL1)=0 V(WL2)=0 V(WL3)=0
+
+.option rawfmt="psfbin"

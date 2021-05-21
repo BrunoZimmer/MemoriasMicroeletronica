@@ -1,0 +1,6 @@
+
+
+search TpPre from binary(start=1n, stop=1.5n, tol=0.001n){
+	run TmpPre
+}until (TmpPre->Ten_Q1 < 0.9)
+

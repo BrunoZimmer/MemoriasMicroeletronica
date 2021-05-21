@@ -1,0 +1,18 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  1:49:52 PM, Thur Apr 23, 2020
+design             :  *Memoria de uma bitcell
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  PulsoRead-meas_search
+Analysis Type      :  tran
+Dif_tempo_min      Tpread     @ 2.01504e-09   =  8.49617e-11     
+Ten_dif            Tpread     @ 2.01504e-09   =  0.0990207     
+
+
+
+
+

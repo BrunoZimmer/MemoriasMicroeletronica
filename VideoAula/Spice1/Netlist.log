@@ -1,0 +1,109 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 27578
+Memory  available: 345.4976 MB  physical: 33.7036 GB
+Linux   : CentOS Linux release 7.8.2003 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+All processors running at 3300.0 MHz
+        Socket: Processors
+        0:       0,  1,  2,  3
+        
+System load averages (1min, 5min, 15min) : 124.2 %, 121.8 %, 121.2 %
+
+
+Simulating `Netlist.scs' on itacolomi.lapsi at 9:44:48 AM, Thur Jan 28, 2021 (process id: 27578).
+Current working directory: /home/brunozimmer/Documentos/VideoAula/Spice1
+Command line:
+    /tools/cadence/SPECTRE161/tools/bin/spectre -64 Netlist.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/brunozimmer/Documentos/VideoAula/Spice1/Netlist.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Time for NDB Parsing: CPU = 124.758 ms, elapsed = 565.233 ms.
+Time accumulated: CPU = 142.751 ms, elapsed = 565.242 ms.
+Peak resident memory used = 41.8 Mbytes.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 21.181 ms, elapsed = 39.4871 ms.
+Time accumulated: CPU = 164.16 ms, elapsed = 608.09 ms.
+Peak resident memory used = 48.8 Mbytes.
+
+
+Time for EDB Visiting: CPU = 380 us, elapsed = 408.888 us.
+Time accumulated: CPU = 164.714 ms, elapsed = 608.891 ms.
+Peak resident memory used = 49.2 Mbytes.
+
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 3
+           resistor 7     
+            vsource 1     
+
+Analysis and control statement inventory:
+                 dc 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 1.848 ms, elapsed = 103.135 ms.
+Time accumulated: CPU = 166.708 ms, elapsed = 712.349 ms.
+Peak resident memory used = 50.3 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+**********************
+DC Analysis `srcSweep'
+**********************
+
+Notice from spectre during DC analysis `srcSweep'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Netlist.raw/srcSweep.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(A) = 1 V
+I: I(Vvdd:p) = 741 uA
+Convergence achieved in 2 iterations.
+DC simulation time: CPU = 1.782 ms, elapsed = 70.9002 ms.
+Total time required for dc analysis `srcSweep': CPU = 1.834 ms, elapsed = 70.9481 ms.
+Time accumulated: CPU = 172.652 ms, elapsed = 787.41 ms.
+Peak resident memory used = 51.3 Mbytes.
+
+
+Aggregate audit (9:44:49 AM, Thur Jan 28, 2021):
+Time used: CPU = 175 ms, elapsed = 854 ms, util. = 20.4%.
+Time spent in licensing: elapsed = 54 ms, percentage of total = 6.32%.
+Peak memory used = 51.8 Mbytes.
+Simulation started at: 9:44:48 AM, Thur Jan 28, 2021, ended at: 9:44:49 AM, Thur Jan 28, 2021, with elapsed time (wall clock): 854 ms.
+spectre completes with 0 errors, 0 warnings, and 1 notice.

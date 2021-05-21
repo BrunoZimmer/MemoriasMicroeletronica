@@ -1,0 +1,207 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 6863
+Memory  available: 5.8658 GB  physical: 33.7036 GB
+Linux   : CentOS Linux release 7.8.2003 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+All processors running at 3322.7 MHz
+        Socket: Processors
+        0:       0,  1,  2,  3
+        
+System load averages (1min, 5min, 15min) : 168.2 %, 165.5 %, 166.8 %
+
+
+Simulating `MemorySchematic.scs' on itacolomi.lapsi at 5:42:08 PM, Fri Aug 21, 2020 (process id: 6863).
+Current working directory: /home/brunozimmer/Documentos/Crossbar_nao_volatil/Lissajous
+Command line:
+    /tools/cadence/SPECTRE161/tools.lnx86/bin/spectre -64 =mdl Cell.mdl  \
+        MemorySchematic.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+
+Warning from spectre.
+    WARNING (MDL-1452): line 1, column 1: syntax error before or at: *
+            unrecognised statement.
+
+Reading file:  /home/brunozimmer/Documentos/Crossbar_nao_volatil/Lissajous/MemorySchematic.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/brunozimmer/Documentos/Crossbar_nao_volatil/Lissajous/45nm_LP.pm
+Reading file:  /home/brunozimmer/Documentos/Crossbar_nao_volatil/Lissajous/MTJT.spi
+Time for NDB Parsing: CPU = 203.31 ms, elapsed = 606.782 ms.
+Time accumulated: CPU = 221.029 ms, elapsed = 606.79 ms.
+Peak resident memory used = 52.9 Mbytes.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Existing shared object for module bsource_299dda is up to date.
+Installed compiled interface for bsource_299dda.
+Existing shared object for module bsource_c88c6a is up to date.
+Installed compiled interface for bsource_c88c6a.
+Existing shared object for module bsource_42ea24 is up to date.
+Installed compiled interface for bsource_42ea24.
+Existing shared object for module bsource_7b7e87 is up to date.
+Installed compiled interface for bsource_7b7e87.
+Existing shared object for module bsource_098211 is up to date.
+Installed compiled interface for bsource_098211.
+Existing shared object for module bsource_ad0f4a is up to date.
+Installed compiled interface for bsource_ad0f4a.
+Time for Elaboration: CPU = 22.054 ms, elapsed = 45.357 ms.
+Time accumulated: CPU = 243.225 ms, elapsed = 652.307 ms.
+Peak resident memory used = 60.9 Mbytes.
+
+
+Time for EDB Visiting: CPU = 996 us, elapsed = 2.72512 ms.
+Time accumulated: CPU = 244.421 ms, elapsed = 656.145 ms.
+Peak resident memory used = 61.5 Mbytes.
+
+
+Global user options:
+             rawfmt = psfbin
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 15
+     bsource_7b7e87 1     
+     bsource_42ea24 1     
+     bsource_299dda 1     
+     bsource_098211 1     
+     bsource_ad0f4a 1     
+     bsource_c88c6a 1     
+          capacitor 7     
+           resistor 7     
+               vccs 1     
+               vcvs 4     
+            vsource 4     
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 2.179 ms, elapsed = 77.719 ms.
+Time accumulated: CPU = 246.745 ms, elapsed = 734.101 ms.
+Peak resident memory used = 62.8 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+*****************************************************
+Transient Analysis `LisCurve': time = (0 s -> 2.5 ns)
+*****************************************************
+DC simulation time: CPU = 499 us, elapsed = 499.01 us.
+
+Notice from spectre during transient analysis `LisCurve', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/LisCurve.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   3       (current)
+                 save   15      (voltage)
+
+..........9..........8..........
+
+Notice from spectre at time = 740.66 ps during transient analysis `LisCurve', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.eBiStable:p.
+
+..........9..........8..........7
+
+Notice from spectre at time = 743.823 ps during transient analysis `LisCurve', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.eBiStable:p.
+Notice from spectre at time = 747.809 ps during transient analysis `LisCurve', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.eBiStable:p.
+Notice from spectre at time = 752.354 ps during transient analysis `LisCurve', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.eBiStable:p.
+Notice from spectre at time = 757.545 ps during transient analysis `LisCurve', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.eBiStable:p.
+        Further occurrences of this notice will be suppressed.
+
+..........9..........8..........7..........6..........5..........4..........3..........2..........1..........0
+Number of accepted tran steps =             271
+
+Notice from spectre during transient analysis `LisCurve', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.nBiStable) = 10 V
+I: I(X1.eBiStable:p) = 19.69 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 547 us, elapsed = 548.124 us.
+Intrinsic tran analysis time:    CPU = 25.51 ms, elapsed = 118.229 ms.
+
+Warning from spectre during transient analysis `LisCurve', during task `MDLControl'.
+    WARNING (MDL-2016): line `0': simpleeval - Division By Zero 
+    WARNING (MDL-2016): line `0': simpleeval - Division By Zero 
+    WARNING (MDL-2016): line `0': simpleeval - Division By Zero 
+
+Total time required for tran analysis `LisCurve': CPU = 27.688 ms, elapsed = 120.634 ms.
+Time accumulated: CPU = 280.109 ms, elapsed = 870.055 ms.
+Peak resident memory used = 65.1 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    84 notices suppressed.
+
+
+Aggregate audit (5:42:09 PM, Fri Aug 21, 2020):
+Time used: CPU = 283 ms, elapsed = 993 ms, util. = 28.5%.
+Time spent in licensing: elapsed = 21.4 ms.
+Peak memory used = 65.6 Mbytes.
+Simulation started at: 5:42:08 PM, Fri Aug 21, 2020, ended at: 5:42:09 PM, Fri Aug 21, 2020, with elapsed time (wall clock): 993 ms.
+spectre completes with 0 errors, 4 warnings, and 8 notices.

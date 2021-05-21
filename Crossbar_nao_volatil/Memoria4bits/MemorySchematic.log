@@ -1,0 +1,205 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 32404
+Memory  available: 564.0437 MB  physical: 33.7036 GB
+Linux   : CentOS Linux release 7.8.2003 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+        Socket: Processors [Frequency]
+        0:       0 [2447.4],  1 [2495.7],  2 [2516.3],  3 [2492.6]
+        
+System load averages (1min, 5min, 15min) : 3.0 %, 3.5 %, 3.5 %
+
+
+Simulating `MemorySchematic.scs' on itacolomi.lapsi at 10:49:59 AM, Sat Nov 7, 2020 (process id: 32404).
+Current working directory: /home/brunozimmer/Documentos/Crossbar_nao_volatil/Memoria4bits
+Command line:
+    /tools/cadence/SPECTRE161/tools/bin/spectre -64 MemorySchematic.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/brunozimmer/Documentos/Crossbar_nao_volatil/Memoria4bits/MemorySchematic.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/brunozimmer/Documentos/Crossbar_nao_volatil/Memoria4bits/45nm_LP.pm
+Reading file:  /home/brunozimmer/Documentos/Crossbar_nao_volatil/Memoria4bits/MTJT.spi
+Time for NDB Parsing: CPU = 140.253 ms, elapsed = 164.163 ms.
+Time accumulated: CPU = 166.065 ms, elapsed = 164.172 ms.
+Peak resident memory used = 43.3 Mbytes.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Existing shared object for module bsource_299dda is up to date.
+Installed compiled interface for bsource_299dda.
+Existing shared object for module bsource_c88c6a is up to date.
+Installed compiled interface for bsource_c88c6a.
+Existing shared object for module bsource_42ea24 is up to date.
+Installed compiled interface for bsource_42ea24.
+Existing shared object for module bsource_7b7e87 is up to date.
+Installed compiled interface for bsource_7b7e87.
+Existing shared object for module bsource_098211 is up to date.
+Installed compiled interface for bsource_098211.
+Existing shared object for module bsource_ad0f4a is up to date.
+Installed compiled interface for bsource_ad0f4a.
+Time for Elaboration: CPU = 20.837 ms, elapsed = 20.9229 ms.
+Time accumulated: CPU = 187.031 ms, elapsed = 185.241 ms.
+Peak resident memory used = 51.4 Mbytes.
+
+
+Time for EDB Visiting: CPU = 1.815 ms, elapsed = 1.8189 ms.
+Time accumulated: CPU = 188.963 ms, elapsed = 187.193 ms.
+Peak resident memory used = 52 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to the following 4 nodes:
+        Vvrd
+        PRE1
+        PRE2
+        Vdd
+
+
+Global user options:
+             rawfmt = psfbin
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 60
+     bsource_7b7e87 4     
+     bsource_42ea24 4     
+     bsource_299dda 4     
+     bsource_098211 4     
+     bsource_ad0f4a 4     
+     bsource_c88c6a 4     
+          capacitor 26    
+           resistor 28    
+               vccs 4     
+               vcvs 16    
+            vsource 12    
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 2.467 ms, elapsed = 43.751 ms.
+Time accumulated: CPU = 191.542 ms, elapsed = 231.067 ms.
+Peak resident memory used = 53.3 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+*****************************************************
+Transient Analysis `timeSweep': time = (0 s -> 10 ns)
+*****************************************************
+DC simulation time: CPU = 794 us, elapsed = 795.126 us.
+
+Notice from spectre during transient analysis `timeSweep'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/timeSweep.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 10 ns
+    step = 1 ps
+    maxstep = 200 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   12      (current)
+                 save   60      (voltage)
+
+........9
+
+Notice from spectre at time = 1.0244 ns during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node X1.eBiStable:p.
+Notice from spectre at time = 1.03024 ns during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node X1.eBiStable:p.
+Notice from spectre at time = 1.04893 ns during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node X1.eBiStable:p.
+Notice from spectre at time = 1.06224 ns during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node X1.eBiStable:p.
+
+........9.
+
+Notice from spectre at time = 1.07825 ns during transient analysis `timeSweep'.
+    Found trapezoidal ringing on node X1.eBiStable:p.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7
+
+Notice from spectre at time = 2.97421 ns during transient analysis `timeSweep'.
+    Newton iteration fails to converge at time = 2.97421 ns step = 100.089e-24 s.
+        Disaster recovery algorithm is enabled to search for a converged solution.
+Error found by spectre at time = 2.97581 ns during transient analysis `timeSweep'.
+    ERROR (SPECTRE-16192): No convergence achieved with the minimum time step specified.  Last acceptable solution computed at 2.97421 ns.
+
+The values for those nodes that did not converge on the last Newton iteration are given below.  The manner in which the convergence criteria were not satisfied is also given.
+            Failed test: | Value | > RelTol*Ref + AbsTol
+
+ Top 10 Residue too large Convergence failure:
+    V(X2.n50) = -155.972 nV, previously -271.025 nV.
+        residue too large: | -76.1515 uA | > 132.92 nA + 1 pA
+    V(X3.n50) = -155.985 nV, previously -271.003 nV.
+        residue too large: | -76.1281 uA | > 132.93 nA + 1 pA
+
+
+The following set of suggestions might help you avoid convergence difficulties.  
+
+ 1. Evaluate and resolve any notice, warning, or error messages.
+ 2. Use realistic device models. Check all component parameters, particularly nonlinear device model parameters, to ensure that they are reasonable.
+ 3. Small floating resistors connected to high impedance nodes can cause convergence difficulties. Avoid very small floating resistors, particularly small parasitic resistors in semiconductors. Instead, use voltage sources or iprobes to measure current.
+ 4. Ensure that a complete set of parasitic capacitors is used on nonlinear devices to avoid jumps in the solution waveforms. On MOS models, specify nonzero source and drain areas.
+ 5. Perform sanity check on the parameter values by using the parameter range checker (use ``+param param-limits-file'' as a command line argument) and heed any warnings.  Print the minimum and maximum parameter value by using `info' analysis.  Ensure that the bounds given for instance, model, output, temperature-dependent, and operating-point (if possible) parameters are reasonable.
+
+ 6. Check the direction of both independent and dependent current sources. Convergence problems might result if current sources are connected such that they force current backward through diodes.
+
+ 7.  Enable diagnostic messages by setting option `diagnose=detailed'.
+ 8. Use the `cmin' parameter to install a small capacitor from every node in the circuit to ground.  This usually eliminates any jump in the solution.
+ 9. Loosen tolerances, particularly absolute tolerances like `iabstol' (on options statement). If tolerances are set too tight, they might preclude convergence.
+10. Try to simplify the nonlinear component models to avoid regions that might contribute to convergence problems in the model.
+
+Analysis `timeSweep' was terminated prematurely due to an error.
+
+Notice from spectre.
+    6 notices suppressed.
+
+
+Aggregate audit (10:50:00 AM, Sat Nov 7, 2020):
+Time used: CPU = 234 ms, elapsed = 315 ms, util. = 74.5%.
+Time spent in licensing: elapsed = 30.6 ms, percentage of total = 9.74%.
+Peak memory used = 55.8 Mbytes.
+Simulation started at: 10:49:59 AM, Sat Nov 7, 2020, ended at: 10:50:00 AM, Sat Nov 7, 2020, with elapsed time (wall clock): 315 ms.
+spectre completes with 1 error, 0 warnings, and 9 notices.

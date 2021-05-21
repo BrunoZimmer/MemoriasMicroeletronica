@@ -1,0 +1,3116 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 4515
+Memory  available: 832.2785 MB  physical: 33.7038 GB
+Linux   : CentOS Linux release 7.6.1810 (Core) 
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+All processors running at 3300.0 MHz
+        Socket: Processors
+        0:       0,  1,  2,  3
+        
+System load averages (1min, 5min, 15min) : 109.0 %, 108.5 %, 108.0 %
+
+
+Simulating `Cell.scs' on itacolomi.lapsi at 1:39:26 PM, Fri May 1, 2020 (process id: 4515).
+Current working directory: /home/brunozimmer/Documentos/Netlist_OneCellMem/W_Capacitance/Test_Read/Up_to_Down
+Command line:
+    /tools/cadence/SPECTRE161/tools.lnx86/bin/spectre -64 =mdl  \
+        TpRead.mdl Cell.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+
+Warning from spectre.
+    WARNING (MDL-1452): line 1, column 1: syntax error before or at: *
+            unrecognised statement.
+
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/W_Capacitance/Test_Read/Up_to_Down/Cell.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/W_Capacitance/Test_Read/Up_to_Down/TRISTATE.spi
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/W_Capacitance/Test_Read/Up_to_Down/45nm_LP.pm
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/W_Capacitance/Test_Read/Up_to_Down/INV.spi
+Reading file:  /home/brunozimmer/Documentos/Netlist_OneCellMem/W_Capacitance/Test_Read/Up_to_Down/PassTransistor.spi
+Time for NDB Parsing: CPU = 189.378 ms, elapsed = 616.181 ms.
+Time accumulated: CPU = 205.989 ms, elapsed = 616.188 ms.
+Peak resident memory used = 52.9 Mbytes.
+
+
+Warning from spectre during circuit read-in.
+    WARNING (SFE-397): A primitive with name NMOS_VTL already exist, will override.
+    WARNING (SFE-397): A primitive with name PMOS_VTL already exist, will override.
+    WARNING (SFE-397): A primitive with name NMOS_VTL already exist, will override.
+    WARNING (SFE-397): A primitive with name PMOS_VTL already exist, will override.
+    WARNING (SFE-397): A primitive with name NMOS_VTL already exist, will override.
+        Further occurrences of this warning will be suppressed.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 17.444 ms, elapsed = 17.5879 ms.
+Time accumulated: CPU = 223.565 ms, elapsed = 633.923 ms.
+Peak resident memory used = 59.8 Mbytes.
+
+
+Time for EDB Visiting: CPU = 877 us, elapsed = 885.01 us.
+Time accumulated: CPU = 224.576 ms, elapsed = 634.96 ms.
+Peak resident memory used = 60.4 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to node `Gnd5'.
+
+
+Global user options:
+             rawfmt = psfbin
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 21
+              bsim4 17    
+          capacitor 2     
+            vsource 14    
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Notice from spectre.
+    1 warning suppressed.
+
+Time for parsing: CPU = 2.277 ms, elapsed = 37.3681 ms.
+Time accumulated: CPU = 226.964 ms, elapsed = 672.458 ms.
+Peak resident memory used = 61.8 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
++++++++++++
+TpWl = (1n)
++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpWL-000_TmpWL': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.434 ms, elapsed = 1.43504 ms.
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpWL-000_TmpWL.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 499 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             150
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.799 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.483 ms, elapsed = 1.48606 ms.
+Intrinsic tran analysis time:    CPU = 33.977 ms, elapsed = 81.821 ms.
+Total time required for tran analysis `TmpWL-000_TmpWL': CPU = 36.995 ms, elapsed = 84.8379 ms.
+Time accumulated: CPU = 271.888 ms, elapsed = 816.753 ms.
+Peak resident memory used = 64.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    30 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 1 ) :
+Ten_Q=0.000648292
+Ten_QB=1.05131
+Tp_wl=1e-09
+Tread_bl=5e-10
+
++++++++++++++
+TpWl = (1.5n)
++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpWL-000_TmpWL': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.04 ms, elapsed = 1.06502 ms.
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpWL-000_TmpWL.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 499 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             144
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.799 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.075 ms, elapsed = 1.10602 ms.
+Intrinsic tran analysis time:    CPU = 32.1 ms, elapsed = 76.088 ms.
+Total time required for tran analysis `TmpWL-000_TmpWL': CPU = 34.238 ms, elapsed = 78.3899 ms.
+Time accumulated: CPU = 312.143 ms, elapsed = 906.041 ms.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    39 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 2 ) :
+Ten_Q=0.999994
+Ten_QB=0.999994
+Tp_wl=1.5e-09
+Tread_bl=0
+
++++++++++++++++
+TpWl = 1.25e-09
++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpWL-000_TmpWL': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.032 ms, elapsed = 1.07193 ms.
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpWL-000_TmpWL.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 499 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             150
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.836 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.069 ms, elapsed = 1.11985 ms.
+Intrinsic tran analysis time:    CPU = 33.328 ms, elapsed = 86.5672 ms.
+Total time required for tran analysis `TmpWL-000_TmpWL': CPU = 35.438 ms, elapsed = 88.8669 ms.
+Time accumulated: CPU = 353.407 ms, elapsed = 1.01817 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    34 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 3 ) :
+Ten_Q=0.110492
+Ten_QB=1.05131
+Tp_wl=1.25e-09
+Tread_bl=2.5e-10
+
+++++++++++++++++
+TpWl = 1.125e-09
+++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpWL-000_TmpWL': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.015 ms, elapsed = 1.04785 ms.
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpWL-000_TmpWL.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 499 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             151
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.836 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.05 ms, elapsed = 1.08981 ms.
+Intrinsic tran analysis time:    CPU = 33.989 ms, elapsed = 65.634 ms.
+Total time required for tran analysis `TmpWL-000_TmpWL': CPU = 36.096 ms, elapsed = 68.249 ms.
+Time accumulated: CPU = 395.269 ms, elapsed = 1.09288 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    33 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 4 ) :
+Ten_Q=0.00912774
+Ten_QB=1.05131
+Tp_wl=1.125e-09
+Tread_bl=3.75e-10
+
++++++++++++++++++
+TpWl = 1.1875e-09
++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpWL-000_TmpWL': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.012 ms, elapsed = 1.06192 ms.
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpWL-000_TmpWL.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 499 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             150
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.799 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.05 ms, elapsed = 1.10888 ms.
+Intrinsic tran analysis time:    CPU = 33.687 ms, elapsed = 95.2299 ms.
+Total time required for tran analysis `TmpWL-000_TmpWL': CPU = 35.778 ms, elapsed = 97.5299 ms.
+Time accumulated: CPU = 436.744 ms, elapsed = 1.1962 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    34 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 5 ) :
+Ten_Q=0.0337222
+Ten_QB=1.05131
+Tp_wl=1.1875e-09
+Tread_bl=3.125e-10
+
+++++++++++++++++++
+TpWl = 1.21875e-09
+++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpWL-000_TmpWL': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.006 ms, elapsed = 1.02997 ms.
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpWL-000_TmpWL.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 499 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             151
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.836 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.043 ms, elapsed = 1.07408 ms.
+Intrinsic tran analysis time:    CPU = 34.352 ms, elapsed = 89.9179 ms.
+Total time required for tran analysis `TmpWL-000_TmpWL': CPU = 36.443 ms, elapsed = 92.2179 ms.
+Time accumulated: CPU = 478.956 ms, elapsed = 1.29446 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    34 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 6 ) :
+Ten_Q=0.0621788
+Ten_QB=1.05131
+Tp_wl=1.21875e-09
+Tread_bl=2.8125e-10
+
+++++++++++++++++++
+TpWl = 1.23438e-09
+++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpWL-000_TmpWL': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.052 ms, elapsed = 1.36685 ms.
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpWL-000_TmpWL.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 499 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             150
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.836 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.101 ms, elapsed = 1.48582 ms.
+Intrinsic tran analysis time:    CPU = 35.387 ms, elapsed = 110.019 ms.
+Total time required for tran analysis `TmpWL-000_TmpWL': CPU = 37.766 ms, elapsed = 114.172 ms.
+Time accumulated: CPU = 522.599 ms, elapsed = 1.41572 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    35 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 7 ) :
+Ten_Q=0.0815459
+Ten_QB=1.05131
+Tp_wl=1.23438e-09
+Tread_bl=2.65625e-10
+
+++++++++++++++++++
+TpWl = 1.24219e-09
+++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpWL-000_TmpWL': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.006 ms, elapsed = 1.03307 ms.
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpWL-000_TmpWL.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 499 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             150
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.836 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.043 ms, elapsed = 1.07908 ms.
+Intrinsic tran analysis time:    CPU = 33.454 ms, elapsed = 80.5621 ms.
+Total time required for tran analysis `TmpWL-000_TmpWL': CPU = 35.541 ms, elapsed = 82.8118 ms.
+Time accumulated: CPU = 563.947 ms, elapsed = 1.51054 s.
+Peak resident memory used = 64.7 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    35 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 8 ) :
+Ten_Q=0.0930338
+Ten_QB=1.05131
+Tp_wl=1.24219e-09
+Tread_bl=2.57813e-10
+
+++++++++++++++++++
+TpWl = 1.24609e-09
+++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpWL-000_TmpWL': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.027 ms, elapsed = 1.0519 ms.
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpWL-000_TmpWL.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 499 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             150
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.836 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.066 ms, elapsed = 1.10698 ms.
+Intrinsic tran analysis time:    CPU = 33.242 ms, elapsed = 65.644 ms.
+Total time required for tran analysis `TmpWL-000_TmpWL': CPU = 35.395 ms, elapsed = 67.9889 ms.
+Time accumulated: CPU = 605.2 ms, elapsed = 1.58839 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    35 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 9 ) :
+Ten_Q=0.101352
+Ten_QB=1.05131
+Tp_wl=1.24609e-09
+Tread_bl=2.53906e-10
+
+++++++++++++++++++
+TpWl = 1.24414e-09
+++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpWL-000_TmpWL': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.025 ms, elapsed = 1.10006 ms.
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpWL-000_TmpWL.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 499 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             150
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.836 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.065 ms, elapsed = 1.15395 ms.
+Intrinsic tran analysis time:    CPU = 33.229 ms, elapsed = 89.3619 ms.
+Total time required for tran analysis `TmpWL-000_TmpWL': CPU = 35.339 ms, elapsed = 91.804 ms.
+Time accumulated: CPU = 646.29 ms, elapsed = 1.68621 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    35 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 10 ) :
+Ten_Q=0.0967828
+Ten_QB=1.05131
+Tp_wl=1.24414e-09
+Tread_bl=2.55859e-10
+
+++++++++++++++++++
+TpWl = 1.24512e-09
+++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+************************************************************
+Transient Analysis `TmpWL-000_TmpWL': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.037 ms, elapsed = 2.34389 ms.
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpWL-000_TmpWL.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 499 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             150
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.836 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.074 ms, elapsed = 2.38705 ms.
+Intrinsic tran analysis time:    CPU = 33.108 ms, elapsed = 86.0269 ms.
+Total time required for tran analysis `TmpWL-000_TmpWL': CPU = 35.214 ms, elapsed = 89.5691 ms.
+Time accumulated: CPU = 687.295 ms, elapsed = 1.7844 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    35 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 11 ) :
+Ten_Q=0.0990676
+Ten_QB=1.05131
+Tp_wl=1.24512e-09
+Tread_bl=2.54883e-10
+
+++++++++++++++++++++++++++++++++++++++++++
+Optimization completed. TpWl = 1.24512e-09
+++++++++++++++++++++++++++++++++++++++++++
+
+************************************************************
+Transient Analysis `TmpWL-000_TmpWL': time = (0 s -> 2.5 ns)
+************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.063 ms, elapsed = 3.23701 ms.
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpWL-000_TmpWL.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 499 ps during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             150
+
+Notice from spectre during transient analysis `TmpWL-000_TmpWL', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.836 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.105 ms, elapsed = 3.28302 ms.
+Intrinsic tran analysis time:    CPU = 33.418 ms, elapsed = 87.8499 ms.
+Total time required for tran analysis `TmpWL-000_TmpWL': CPU = 35.742 ms, elapsed = 93.976 ms.
+Time accumulated: CPU = 728.267 ms, elapsed = 1.88439 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    35 notices suppressed.
+
+
+++++++++++++++
+TpPre = (0.6n)
+++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+**************************************************************
+Transient Analysis `TmpPre-000_TmpPre': time = (0 s -> 2.5 ns)
+**************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.027 ms, elapsed = 1.02711 ms.
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpPre-000_TmpPre.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 527.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             150
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.836 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.062 ms, elapsed = 1.06311 ms.
+Intrinsic tran analysis time:    CPU = 33.405 ms, elapsed = 83.7941 ms.
+Total time required for tran analysis `TmpPre-000_TmpPre': CPU = 35.717 ms, elapsed = 86.107 ms.
+Time accumulated: CPU = 771.337 ms, elapsed = 2.04878 s.
+Peak resident memory used = 64.8 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    35 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 1 ) :
+Ten_Q1=1.00001
+Ten_QB1=1.00001
+Tp_Pre=6e-10
+Tpre_bl=6.45117e-10
+
+++++++++++++++
+TpPre = (1.2n)
+++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+**************************************************************
+Transient Analysis `TmpPre-000_TmpPre': time = (0 s -> 2.5 ns)
+**************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.036 ms, elapsed = 1.06382 ms.
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpPre-000_TmpPre.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 527.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             145
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.629 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.072 ms, elapsed = 1.11198 ms.
+Intrinsic tran analysis time:    CPU = 32.147 ms, elapsed = 78.5339 ms.
+Total time required for tran analysis `TmpPre-000_TmpPre': CPU = 34.295 ms, elapsed = 80.8542 ms.
+Time accumulated: CPU = 811.639 ms, elapsed = 2.14242 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    40 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 2 ) :
+Ten_Q1=0.87788
+Ten_QB1=0.475456
+Tp_Pre=1.2e-09
+Tpre_bl=4.51172e-11
+
++++++++++++++
+TpPre = 9e-10
++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+**************************************************************
+Transient Analysis `TmpPre-000_TmpPre': time = (0 s -> 2.5 ns)
+**************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.037 ms, elapsed = 5.41306 ms.
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpPre-000_TmpPre.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 527.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             150
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.835 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.074 ms, elapsed = 5.46193 ms.
+Intrinsic tran analysis time:    CPU = 33.164 ms, elapsed = 69.2852 ms.
+Total time required for tran analysis `TmpPre-000_TmpPre': CPU = 35.326 ms, elapsed = 75.9668 ms.
+Time accumulated: CPU = 852.895 ms, elapsed = 2.22446 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    35 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 3 ) :
+Ten_Q1=0.999935
+Ten_QB1=0.999935
+Tp_Pre=9e-10
+Tpre_bl=3.45117e-10
+
+++++++++++++++++
+TpPre = 1.05e-09
+++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+**************************************************************
+Transient Analysis `TmpPre-000_TmpPre': time = (0 s -> 2.5 ns)
+**************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.046 ms, elapsed = 1.18494 ms.
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpPre-000_TmpPre.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 527.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             150
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.817 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.085 ms, elapsed = 1.23501 ms.
+Intrinsic tran analysis time:    CPU = 33.215 ms, elapsed = 80.1361 ms.
+Total time required for tran analysis `TmpPre-000_TmpPre': CPU = 35.372 ms, elapsed = 82.5841 ms.
+Time accumulated: CPU = 894.093 ms, elapsed = 2.31829 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    37 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 4 ) :
+Ten_Q1=0.991343
+Ten_QB1=0.991304
+Tp_Pre=1.05e-09
+Tpre_bl=1.95117e-10
+
++++++++++++++++++
+TpPre = 1.125e-09
++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+**************************************************************
+Transient Analysis `TmpPre-000_TmpPre': time = (0 s -> 2.5 ns)
+**************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.214 ms, elapsed = 10.546 ms.
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpPre-000_TmpPre.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 527.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             147
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.773 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.254 ms, elapsed = 10.597 ms.
+Intrinsic tran analysis time:    CPU = 32.582 ms, elapsed = 86.58 ms.
+Total time required for tran analysis `TmpPre-000_TmpPre': CPU = 35.059 ms, elapsed = 98.5341 ms.
+Time accumulated: CPU = 934.984 ms, elapsed = 2.42928 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    38 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 5 ) :
+Ten_Q1=0.937579
+Ten_QB1=0.928204
+Tp_Pre=1.125e-09
+Tpre_bl=1.20117e-10
+
+++++++++++++++++++
+TpPre = 1.1625e-09
+++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+**************************************************************
+Transient Analysis `TmpPre-000_TmpPre': time = (0 s -> 2.5 ns)
+**************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.005 ms, elapsed = 1.02592 ms.
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpPre-000_TmpPre.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 527.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             147
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.657 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.04 ms, elapsed = 1.06692 ms.
+Intrinsic tran analysis time:    CPU = 32.188 ms, elapsed = 75.604 ms.
+Total time required for tran analysis `TmpPre-000_TmpPre': CPU = 34.284 ms, elapsed = 77.9278 ms.
+Time accumulated: CPU = 975.038 ms, elapsed = 2.5152 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    38 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 6 ) :
+Ten_Q1=0.887821
+Ten_QB1=0.783462
+Tp_Pre=1.1625e-09
+Tpre_bl=8.26172e-11
+
++++++++++++++++++++
+TpPre = 1.14375e-09
++++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+**************************************************************
+Transient Analysis `TmpPre-000_TmpPre': time = (0 s -> 2.5 ns)
+**************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.042 ms, elapsed = 1.09196 ms.
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpPre-000_TmpPre.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 527.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             148
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.762 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.079 ms, elapsed = 1.13988 ms.
+Intrinsic tran analysis time:    CPU = 32.626 ms, elapsed = 75.0911 ms.
+Total time required for tran analysis `TmpPre-000_TmpPre': CPU = 34.899 ms, elapsed = 80.3602 ms.
+Time accumulated: CPU = 1.01572 s, elapsed = 2.60162 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    38 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 7 ) :
+Ten_Q1=0.910802
+Ten_QB1=0.875349
+Tp_Pre=1.14375e-09
+Tpre_bl=1.01367e-10
+
++++++++++++++++++++
+TpPre = 1.13438e-09
++++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+**************************************************************
+Transient Analysis `TmpPre-000_TmpPre': time = (0 s -> 2.5 ns)
+**************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.062 ms, elapsed = 1.0922 ms.
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpPre-000_TmpPre.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 527.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             148
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.753 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.099 ms, elapsed = 1.14107 ms.
+Intrinsic tran analysis time:    CPU = 32.664 ms, elapsed = 77.9581 ms.
+Total time required for tran analysis `TmpPre-000_TmpPre': CPU = 34.973 ms, elapsed = 80.4341 ms.
+Time accumulated: CPU = 1.05679 s, elapsed = 2.68986 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    39 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 8 ) :
+Ten_Q1=0.924272
+Ten_QB1=0.905699
+Tp_Pre=1.13438e-09
+Tpre_bl=1.10742e-10
+
++++++++++++++++++++
+TpPre = 1.13906e-09
++++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+**************************************************************
+Transient Analysis `TmpPre-000_TmpPre': time = (0 s -> 2.5 ns)
+**************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.034 ms, elapsed = 1.06192 ms.
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpPre-000_TmpPre.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 527.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             148
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.777 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.069 ms, elapsed = 1.10984 ms.
+Intrinsic tran analysis time:    CPU = 33.457 ms, elapsed = 117.737 ms.
+Total time required for tran analysis `TmpPre-000_TmpPre': CPU = 35.614 ms, elapsed = 120.076 ms.
+Time accumulated: CPU = 1.09844 s, elapsed = 2.83108 s.
+Peak resident memory used = 64.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    38 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 9 ) :
+Ten_Q1=0.917344
+Ten_QB1=0.891864
+Tp_Pre=1.13906e-09
+Tpre_bl=1.06055e-10
+
++++++++++++++++++++
+TpPre = 1.13672e-09
++++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+**************************************************************
+Transient Analysis `TmpPre-000_TmpPre': time = (0 s -> 2.5 ns)
+**************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.028 ms, elapsed = 1.05405 ms.
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpPre-000_TmpPre.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 527.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             148
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.747 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.075 ms, elapsed = 1.71304 ms.
+Intrinsic tran analysis time:    CPU = 33.546 ms, elapsed = 88.9959 ms.
+Total time required for tran analysis `TmpPre-000_TmpPre': CPU = 35.71 ms, elapsed = 93.0729 ms.
+Time accumulated: CPU = 1.14017 s, elapsed = 2.94079 s.
+Peak resident memory used = 65 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    40 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 10 ) :
+Ten_Q1=0.920775
+Ten_QB1=0.899082
+Tp_Pre=1.13672e-09
+Tpre_bl=1.08398e-10
+
++++++++++++++++++++
+TpPre = 1.13555e-09
++++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+**************************************************************
+Transient Analysis `TmpPre-000_TmpPre': time = (0 s -> 2.5 ns)
+**************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.044 ms, elapsed = 1.07288 ms.
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpPre-000_TmpPre.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 527.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             148
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.75 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.082 ms, elapsed = 1.122 ms.
+Intrinsic tran analysis time:    CPU = 32.262 ms, elapsed = 51.985 ms.
+Total time required for tran analysis `TmpPre-000_TmpPre': CPU = 34.486 ms, elapsed = 54.394 ms.
+Time accumulated: CPU = 1.18066 s, elapsed = 3.00134 s.
+Peak resident memory used = 65 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    39 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 11 ) :
+Ten_Q1=0.922529
+Ten_QB1=0.902448
+Tp_Pre=1.13555e-09
+Tpre_bl=1.0957e-10
+
++++++++++++++++++++
+TpPre = 1.13613e-09
++++++++++++++++++++
+
+Warning from spectre.
+    WARNING (CMI-2178): Vgnd: Terminals must not be connected together (to node `0').
+
+
+**************************************************************
+Transient Analysis `TmpPre-000_TmpPre': time = (0 s -> 2.5 ns)
+**************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.033 ms, elapsed = 1.05405 ms.
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpPre-000_TmpPre.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 527.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             148
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.748 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.073 ms, elapsed = 1.10078 ms.
+Intrinsic tran analysis time:    CPU = 33.145 ms, elapsed = 84.794 ms.
+Total time required for tran analysis `TmpPre-000_TmpPre': CPU = 35.412 ms, elapsed = 87.219 ms.
+Time accumulated: CPU = 1.22182 s, elapsed = 3.09456 s.
+Peak resident memory used = 65 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    39 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 12 ) :
+Ten_Q1=0.921654
+Ten_QB1=0.900779
+Tp_Pre=1.13613e-09
+Tpre_bl=1.08984e-10
+
++++++++++++++++++++++++++++++++++++++++++++
+Optimization completed. TpPre = 1.13613e-09
++++++++++++++++++++++++++++++++++++++++++++
+
+**************************************************************
+Transient Analysis `TmpPre-000_TmpPre': time = (0 s -> 2.5 ns)
+**************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    There are 4 IC nodes defined.
+Notice from spectre during IC analysis, during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(X2.2) = -25.5891 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 1.054 ms, elapsed = 1.31583 ms.
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file Cell.raw/TmpPre-000_TmpPre.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2.5 ns
+    step = 2.5 ps
+    maxstep = 50 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   13      (current)
+                 save   21      (voltage)
+                 ic     4       
+
+...............9..
+
+Notice from spectre at time = 327.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9.....
+
+Notice from spectre at time = 377.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9........
+
+Notice from spectre at time = 427.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...........
+
+Notice from spectre at time = 477.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+
+...............9...............
+
+Notice from spectre at time = 527.5 ps during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Found trapezoidal ringing on node Vdd:p.
+        Further occurrences of this notice will be suppressed.
+
+...............9...............8...............7...............6...............5...............4...............3...............2...............1...............0
+Number of accepted tran steps =             148
+
+Notice from spectre during transient analysis `TmpPre-000_TmpPre', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(QB) = 1.078 V
+I: I(Vpre:p) = 3.748 mA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (100.0 %)     1 (100.0 %)     2 (100.0 %)     3 (100.0 %)
+        Other   
+Initial condition solution time: CPU = 1.103 ms, elapsed = 1.436 ms.
+Intrinsic tran analysis time:    CPU = 33.067 ms, elapsed = 84.6701 ms.
+Total time required for tran analysis `TmpPre-000_TmpPre': CPU = 35.392 ms, elapsed = 89.0062 ms.
+Time accumulated: CPU = 1.2627 s, elapsed = 3.197 s.
+Peak resident memory used = 65 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    39 notices suppressed.
+
+
+Aggregate audit (1:39:29 PM, Fri May 1, 2020):
+Time used: CPU = 1.27 s, elapsed = 3.25 s, util. = 39%.
+Time spent in licensing: elapsed = 20.2 ms.
+Peak memory used = 65.4 Mbytes.
+Simulation started at: 1:39:26 PM, Fri May 1, 2020, ended at: 1:39:29 PM, Fri May 1, 2020, with elapsed time (wall clock): 3.25 s.
+spectre completes with 0 errors, 29 warnings, and 252 notices.

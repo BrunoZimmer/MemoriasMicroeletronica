@@ -1,0 +1,15 @@
+Exported variables from results directory:  ./MemorySchematic.raw/
+
+date               :  5:42:09 PM, Fri Aug 21, 2020
+design             :  * Crossbar one bit
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  LisCurve
+Analysis Type      :  tran
+Current         = -2.11092e-41 
+Resistance      = -0 
+Voltage         = 0 
+
+
